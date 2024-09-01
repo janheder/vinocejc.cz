@@ -849,32 +849,33 @@ public $slevova_skupina_zakaznika;
 		      $ret .= '<section class="cart-heading">
 		        <div class="container">
 		          <div class="cart-heading__item --active">
-		            <div class="cart-heading__icon"><img src="/img/icons/cart-big.svg" alt="1. Nákupní košík"></div>
-		            <div class="cart-heading__title">1. Nákupní košík</div>
+		            <div class="cart-heading__icon">1</div>
+		            <div class="cart-heading__title">Nákupní košík</div>
 		          </div>
 		          <div class="cart-heading__item">
-		            <div class="cart-heading__icon"><img src="/img/icons/car.svg" alt="2. Doprava a platba"></div>
-		            <div class="cart-heading__title">2. Doprava a platba</div>
+		            <div class="cart-heading__icon">2</div>
+		            <div class="cart-heading__title">Doprava a platba</div>
 		          </div>
 		          <div class="cart-heading__item">
-		            <div class="cart-heading__icon"><img src="/img/icons/personal-data.svg" alt="3. Osobní údaje"></div>
-		            <div class="cart-heading__title">3. Osobní údaje</div>
+		            <div class="cart-heading__icon">3</div>
+		            <div class="cart-heading__title">Osobní údaje</div>
 		          </div>
 		          <div class="cart-heading__item">
-		            <div class="cart-heading__icon"><img src="/img/icons/summary.svg" alt="4. Shrnutí objednávky"></div>
-		            <div class="cart-heading__title">4. Shrnutí objednávky</div>
+		            <div class="cart-heading__icon">4</div>
+		            <div class="cart-heading__title">Shrnutí objednávky</div>
 		          </div>
 		        </div>
 		      </section>';
 		      
 		      // výpis
-		     $ret .= '<section class="cart-content">
+		     $ret .= '<section class="cart-content --narrow">
 		        <div class="container">
 		          <div class="row"> 
 		            <div class="col-12 col-md-8">
 		              <div class="cart-table">
+					  <h1>Nákupní košík</h1>
 		                <form class="cart-content__form" method="post" action="/kosik?krok=2" id="cart-form">
-		                  <div class="cart-table__title">Zboží v košíku</div>
+		                  
 		                  <div class="cart-table-items" >';
 		                  
 		                  $ret .= $this->vypis();
@@ -959,20 +960,20 @@ public $slevova_skupina_zakaznika;
 		       $ret .= '<section class="cart-heading">
 				        <div class="container">
 				          <div class="cart-heading__item --complete">
-				            <div class="cart-heading__icon"><img src="/img/icons/cart-big.svg" alt="1. Nákupní košík"></div>
-				            <div class="cart-heading__title">1. Nákupní košík</div>
+				            <div class="cart-heading__icon">1</div>
+				            <div class="cart-heading__title">Nákupní košík</div>
 				          </div>
 				          <div class="cart-heading__item --active">
-				            <div class="cart-heading__icon"><img src="/img/icons/car.svg" alt="2. Doprava a platba"></div>
-				            <div class="cart-heading__title">2. Doprava a platba</div>
+				            <div class="cart-heading__icon">2</div>
+				            <div class="cart-heading__title">Doprava a platba</div>
 				          </div>
 				          <div class="cart-heading__item">
-				            <div class="cart-heading__icon"><img src="/img/icons/personal-data.svg" alt="3. Osobní údaje"></div>
-				            <div class="cart-heading__title">3. Osobní údaje</div>
+				            <div class="cart-heading__icon">3</div>
+				            <div class="cart-heading__title">Osobní údaje</div>
 				          </div>
 				          <div class="cart-heading__item">
-				            <div class="cart-heading__icon"><img src="/img/icons/summary.svg" alt="4. Shrnutí objednávky"></div>
-				            <div class="cart-heading__title">4. Shrnutí objednávky</div>
+				            <div class="cart-heading__icon">4</div>
+				            <div class="cart-heading__title">Shrnutí objednávky</div>
 				          </div>
 				        </div>
 				      </section>';
@@ -1347,20 +1348,20 @@ public $slevova_skupina_zakaznika;
 		          $ret .= '<section class="cart-heading">
 			        <div class="container">
 			          <div class="cart-heading__item --complete">
-			            <div class="cart-heading__icon"><img src="/img/icons/cart-big.svg" alt="1. Nákupní košík"></div>
-			            <div class="cart-heading__title">1. Nákupní košík</div>
+			            <div class="cart-heading__icon">1</div>
+			            <div class="cart-heading__title">Nákupní košík</div>
 			          </div>
 			          <div class="cart-heading__item --complete">
-			            <div class="cart-heading__icon"><img src="/img/icons/car.svg" alt="2. Doprava a platba"></div>
-			            <div class="cart-heading__title">2. Doprava a platba</div>
+			            <div class="cart-heading__icon">2</div>
+			            <div class="cart-heading__title">Doprava a platba</div>
 			          </div>
 			          <div class="cart-heading__item --active">
-			            <div class="cart-heading__icon"><img src="/img/icons/personal-data.svg" alt="3. Osobní údaje"></div>
-			            <div class="cart-heading__title">3. Osobní údaje</div>
+			            <div class="cart-heading__icon">3</div>
+			            <div class="cart-heading__title">Osobní údaje</div>
 			          </div>
 			          <div class="cart-heading__item">
-			            <div class="cart-heading__icon"><img src="/img/icons/summary.svg" alt="4. Shrnutí objednávky"></div>
-			            <div class="cart-heading__title">4. Shrnutí objednávky</div>
+			            <div class="cart-heading__icon">4</div>
+			            <div class="cart-heading__title">Shrnutí objednávky</div>
 			          </div>
 			        </div>
 			      </section>';
@@ -1863,20 +1864,20 @@ public $slevova_skupina_zakaznika;
 			      $ret .= '<section class="cart-heading">
 			        <div class="container">
 			          <div class="cart-heading__item --complete">
-			            <div class="cart-heading__icon"><img src="/img/icons/cart-big.svg" alt="1. Nákupní košík"></div>
-			            <div class="cart-heading__title">1. Nákupní košík</div>
+			            <div class="cart-heading__icon">1</div>
+			            <div class="cart-heading__title">Nákupní košík</div>
 			          </div>
 			          <div class="cart-heading__item --complete">
-			            <div class="cart-heading__icon"><img src="/img/icons/car.svg" alt="2. Doprava a platba"></div>
-			            <div class="cart-heading__title">2. Doprava a platba</div>
+			            <div class="cart-heading__icon">2</div>
+			            <div class="cart-heading__title">Doprava a platba</div>
 			          </div>
 			          <div class="cart-heading__item --complete">
-			            <div class="cart-heading__icon"><img src="/img/icons/personal-data.svg" alt="3. Osobní údaje"></div>
-			            <div class="cart-heading__title">3. Osobní údaje</div>
+			            <div class="cart-heading__icon">3</div>
+			            <div class="cart-heading__title">Osobní údaje</div>
 			          </div>
 			          <div class="cart-heading__item --active">
-			            <div class="cart-heading__icon"><img src="/img/icons/summary.svg" alt="4. Shrnutí objednávky"></div>
-			            <div class="cart-heading__title">4. Shrnutí objednávky</div>
+			            <div class="cart-heading__icon">4</div>
+			            <div class="cart-heading__title">Shrnutí objednávky</div>
 			          </div>
 			        </div>
 			      </section>';

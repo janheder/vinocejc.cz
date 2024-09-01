@@ -35,7 +35,7 @@
     width: 20px;
 }
 .cart-heading__title{
-    font-size: 16px;
+    font-size: 15px;
     color: $gray-500;
     padding-left: 15px;
 }
@@ -44,6 +44,8 @@
 
 .cart-heading__item.--active {
     .cart-heading__icon{
+        background: $gray-900;
+        color: $white;
     }
     .cart-heading__icon img{
         opacity: 1;
