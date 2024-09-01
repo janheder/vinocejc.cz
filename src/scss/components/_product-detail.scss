@@ -191,7 +191,10 @@
     margin-right: 20px;
     object-fit: contain;
 } 
-
+.product-detail__info{
+    padding: 40px;
+    border: 1px solid $gray-300;
+}
 .product-detail__stock{
     display: flex;
     align-items: center;

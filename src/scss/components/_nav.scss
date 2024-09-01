@@ -17,16 +17,16 @@ nav > .container{
     display: none;
 }
 .nav-link, .nav-linkDesktop{
-    height: 54px;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    color: $white;
+    color: $gray-900;
     text-align: center;
     flex-grow: 1;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .nav-link img, .nav-linkDesktop img{
     margin-left: 10px;
