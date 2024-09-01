@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS-->
     <!-- Custom CSS-->
-    <link href="/css/style.min.css?ver=<?php echo __JS_VERZE__;?>" rel="stylesheet">
+    <link href="https://janheder.github.io/vinocejc.cz/dist/css/style.min.css" rel="stylesheet">
     <link href="/css/v.css?ver=<?php echo __JS_VERZE__;?>" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
 <style>

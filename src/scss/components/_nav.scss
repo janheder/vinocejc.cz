@@ -1,18 +1,12 @@
 nav{
-    background: $gray-900;
+    background: $gray-100;
     position: relative;
-    /*border-top: 1px solid $gray-300;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-    border-bottom: 1px solid $gray-300;*/
 }
 nav.disabled .nav-item{
     pointer-events: none;
 }
 nav > .container{
     display: flex;
-    max-width: 1300px;
-    background: $gray-800;
-    padding: 0;
 }
 .nav-item{
     display: flex;

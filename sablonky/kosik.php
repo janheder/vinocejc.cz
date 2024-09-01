@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Plugins CSS-->
     <!-- Custom CSS-->
-    <link href="/css/style.min.css?ver=<?php echo __JS_VERZE__;?>" rel="stylesheet">
+    <link href="https://janheder.github.io/vinocejc.cz/dist/css/style.min.css" rel="stylesheet">
 
     <script>
       <?php  
