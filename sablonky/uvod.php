@@ -132,36 +132,35 @@
           </div>
         </div>
       </section>
+
+
       <section class="points">
         <div class="container"> 
-          <div class="row"> 
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="points-content"> 
               <div class="points-single">
                 <div class="points-single__icon"> <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/point1.svg" alt="Doprava"></div>
                 <div class="points-single__content"><strong>Doprava </strong><span> již od 99 Kč </span></div>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+
               <div class="points-single">
                 <div class="points-single__icon"> <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/point2.svg" alt="Záruka vrácení a výměny"></div>
                 <div class="points-single__content"><strong>Záruka vrácení a výměny</strong><span>zboží do 30 dní</span></div>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+
               <div class="points-single">
                 <div class="points-single__icon"> <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/point3.svg" alt="Máme 10 000 produktů"></div>
                 <div class="points-single__content"><strong>Máme <?php echo pocet_produktu_skladem();?> produktů</strong><span>připravených skladem </span></div>
               </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+
               <div class="points-single">
                 <div class="points-single__icon"> <img class="lazyload" src="/img/load-symbol.svg" data-src="/img/point4.svg" alt="Odesíláme ihned"></div>
                 <div class="points-single__content"><strong>Odesíláme ihned</strong><span>objednávky přijaté do 12:00</span></div>
-              </div>
             </div>
           </div>
         </div>
       </section>
+
+
       <section class="products">
         <div class="container">
           <h1>Novinky a akční ceny</h1>

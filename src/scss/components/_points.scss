@@ -2,6 +2,14 @@
     padding-top: 20px;
     padding-bottom: 60px;
 }
+.points-content{
+    background: $gray-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
 .points-single{
     display: flex;
     align-items: center;
