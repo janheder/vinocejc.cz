@@ -1,12 +1,13 @@
 header{
-    background: $gray-900;
+    background: $white;
 }
 .header-top{
+    display: none;
     height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $gray-900;
+    background: $white;
     color: $white;
     font-size: 13px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
