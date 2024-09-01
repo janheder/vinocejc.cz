@@ -4,9 +4,10 @@ footer{
     padding: 60px 0;
     content-visibility: auto;
     color: $white;
+    font-size: 14px;
 }
 .footer__title{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     padding-bottom: 20px;
     color: $gray-400;
@@ -16,12 +17,15 @@ footer{
     color: $white;
     line-height: 2;
     display: flex;
+    font-size: 14px;
+    font-weight: 400;
 }
 .footer__text{
     color: $white;
     line-height: 2;
     display: flex;
     margin: 0;
+    font-size: 14px;
 }
 .copyright{
     padding-bottom: 0;
