@@ -35,6 +35,10 @@
     <!-- Custom CSS-->
     <link href="https://janheder.github.io/vinocejc.cz/dist/css/style.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <script>
       <?php  
     // zamezíme opakovanému odeslání formuláře
