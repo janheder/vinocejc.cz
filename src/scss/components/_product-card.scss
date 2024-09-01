@@ -144,6 +144,7 @@
 }
 
 .product-card__btn{
+    min-height: 48px;
     height: 48px;
     color: $green-500;
     background: rgba($green-500,0.1);

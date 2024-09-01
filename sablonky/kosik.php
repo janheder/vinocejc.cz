@@ -72,7 +72,7 @@
       </div>
       <div class="header-main"> 
         <div class="container"> 
-          <a class="logo" href="/"><img src="/img/logo.svg" alt="<?php echo __TITLE_LOGA__;?>" title="<?php echo __TITLE_LOGA__;?>" width="150" height="40"></a>
+          <a class="logo" href="/"><img src="/img/logo-cart.svg" alt="<?php echo __TITLE_LOGA__;?>" title="<?php echo __TITLE_LOGA__;?>" width="150" height="40"></a>
           <div class="search"> 
             <div class="search-wrapper">    
               <form class="search-form" method="get" action="/vyhledavani"> 

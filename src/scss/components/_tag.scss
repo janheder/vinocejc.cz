@@ -1,8 +1,8 @@
 .tag{
     font-size: 12px;
     font-weight: 400;
-    background: $gray-900;
-    color: $white;
+    background: $white;
+    color: $gray-900;
     height: 22px;
     padding: 0 8px;
     display: inline-flex;
@@ -10,18 +10,23 @@
     align-items: center;
     margin-bottom: 3px;
     position: relative;
+    border-radius: $border-radius-main;
 }
 .tag.--sale{
-    background: $red-500;
+    background: $white;
+    color: $red-500;
 }
 .tag.--new{
-    background: $green-500;
+    background: $white;
+    color: $green-500;
 }
 .tag.--recommended{
-    background: #5A5E6A;
+    background: $white;
+    color: $gray-900;
 }
 .tag.--top{
-    background: $gray-900;
+    background: $white;
+    color: $gray-900;
 }
 .tag.--circleSale{
     background: $red-500;
