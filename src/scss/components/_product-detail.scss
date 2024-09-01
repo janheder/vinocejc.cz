@@ -261,11 +261,12 @@
     gap: 10px;
 }
 .product-detail__qty.stepper{
-    height: 62px;   
+    height: 58px;   
     width: 140px;
+    flex-shrink: 0;
 
     span, input{
-        height: 62px;
+        height: 58px;
     }
 }
 .product-detail__qty.stepper span{
@@ -276,10 +277,13 @@
 }
 .product-detail__button{
     z-index: 0;
+    width: 100%;
 }
 .product-detail__button button{
-    min-height: 62px;
+    min-height: 58px;
     padding: 0 60px;
+    width: 100%;
+    background-color: $green-500;
 }
 
 
