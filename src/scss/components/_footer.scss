@@ -1,7 +1,7 @@
 footer{
     /*border-top: 1px solid $gray-300;*/
     background: $gray-900;
-    padding: 60px 0;
+    padding: 80px 0 20px 0;
     content-visibility: auto;
     color: $white;
     font-size: 14px;
@@ -27,8 +27,11 @@ footer{
     margin: 0;
     font-size: 14px;
 }
+footer 
 .copyright{
     padding-bottom: 0;
+    margin-top: 80px;
+    padding-top: 20px;
 }
 .copyright a{
     color: $white;
