@@ -10,6 +10,7 @@
     height: 100%;
     outline: 1px solid $gray-300;
     border-radius: $border-radius-main;
+    overflow: hidden;
 }
 .product-card__link{
     padding: 0px;
@@ -148,7 +149,7 @@
     height: 48px;
     color: $green-500;
     background: rgba($green-500,0.1);
-
+    font-size: 14px;
 }
 
 
