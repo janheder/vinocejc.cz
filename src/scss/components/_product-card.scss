@@ -84,6 +84,9 @@
 .product-card__bottom{
     width:100%;
     padding: 0 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .product-card__description{
     font-size: 14px;
@@ -122,7 +125,6 @@
     align-items: baseline;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 20px;
     flex-shrink: 0;
 }
 .product-card__priceOld{
@@ -139,9 +141,10 @@
 }
 
 .product-card__btn{
+    height: 48px;
+    color: $green-500;
+    background: rgba($green-500,0.1);
 
-    min-height: 48px;
-    background: $red-500;
 }
 
 

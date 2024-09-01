@@ -15,6 +15,7 @@
     z-index: 1;
     white-space: normal;
     transition: 0.2s ease background;
+    border-radius: $border-radius-main;
 
     &:hover, &:active, &:focus{
         color: $white;
