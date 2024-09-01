@@ -4,5 +4,5 @@ Disallow: /
 User-Agent: *
 Disallow: /admin
 
-Sitemap: https://ozeo.cz/sitemap.xml
-Sitemap: https://ozeo.cz/sitemapimages.xml
+Sitemap: https://vinocejc.cz/sitemap.xml
+Sitemap: https://vinocejc.cz/sitemapimages.xml
