@@ -2,12 +2,13 @@
     padding: 60px 0;
 }
 .product-detail__top{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
+    gap: 20px;
 }
 .product-detail__photos{
-    margin-right: 60px;
+    margin-right: 0px;
     position: relative;
+    width: 60%;
 }
 .product-detail__carousel{
     position: relative;
@@ -198,6 +199,7 @@
 .product-detail__info{
     padding: 40px;
     border: 1px solid $gray-300;
+    width: 40%;
 }
 .product-detail__stock{
     display: flex;
