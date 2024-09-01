@@ -1,0 +1,28 @@
+.breadcrumbs{
+    background: $white;
+    padding: 15px 0 0 0;
+}
+.breadcrumbs__item{
+    color: $gray-500;
+    font-size: 13px;
+    padding: 0 10px;
+    line-height: 1;
+}
+.breadcrumbs__item:first-child{
+    padding-left: 0px;
+}
+.breadcrumbs__item.--active{
+    
+}
+.breadcrumbs__separator{
+    transform: rotate(-90deg);
+    height: 5px;
+    width: 8px;
+    margin-bottom: 1px;
+}
+
+@media screen and (max-width: 575px){
+    .breadcrumbs{
+        display: none;
+    }
+}

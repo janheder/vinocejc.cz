@@ -1,0 +1,39 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "zapomenute-heslo";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+        include components/_modal-info.pug
+        
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page.--narrow
+                    section.page-heading
+                        h1 Zapomenuté heslo
+                        p Pokud jste zapomněli své heslo, pošleme Vám nové na email, který jste uvedli při registraci.
+                    
+                    form(method="post" id="password-form")
+
+                        .form-group     
+                            label(for="password-email") Email
+                            | <input type="email" id="register-email" name="password-email" required minlength="6" maxlength="255" pattern="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+                      
+
+                        .form-group 
+                            button.btn.--fullWidth(name="password-submit" id="password-submit") Poslat nové heslo #[img(src="img/icons/cheveron-white.svg")]
+
+
+
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

@@ -1,0 +1,76 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "reklamace";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page.--narrow
+                    section.page-heading
+                        h1 Reklamace
+                        p Zde podávejte případné reklamace. Máte možnost přiložit fotografie a popsat případné nedostatky. Pro zaslání reklamace, po předchozím e-mailu, zaslat na adresu:
+                            span eshop.eline s.r.o., Beskydská 1488, 73801  Frýdek-Místek
+                    
+                    form(method="post" id="rma-form")
+                        .form-group     
+                            label(for="rma-name") Jméno a příjmení
+                            input(type="text" id="rma-name" name="rma-name" required)
+                        .form-group     
+                            label(for="rma-id") Číslo objednávky
+                            input(type="text" id="rma-id" name="rma-id" required)
+                        .form-group     
+                            label(for="rma-email") Email
+                            input(type="email" id="rma-email" name="rma-email" required)
+                        .form-group     
+                            label(for="rma-tel") Telefon
+                            input(type="tel" id="rma-tel" name="rma-tel" required)
+                        .form-group     
+                            label(for="rma-text") Vyjádření k závadě
+                            textarea(type="text" id="rma-text" name="rma-text" rows="4" required)
+
+
+                        .form-group     
+                            input(type="file" id="rma-file1" name="rma-file1")
+
+                        .form-group     
+                            input(type="file" id="rma-file2" name="rma-file2")
+
+                        .form-group     
+                            input(type="file" id="rma-file3" name="rma-file3")
+
+
+
+
+                        .form-group     
+                            label(for="rma-solution") Případný návrh řešení problému (nepovinné)
+                            textarea(type="text" id="rma-solution" name="rma-solution" rows="4")
+
+
+                        .form-group.--checkbox
+                            label(for="rma-agree1") Souhlasím se #[a(href="#") podmínkami ochrany osobních údajů.]
+                            input(type="checkbox" name="rma-agree1" id="rma-agree1" required)
+
+
+                        .form-group 
+                            button.btn.--fullWidth(name="rma-submit" id="rma-submit") Odeslat reklamaci #[img(src="img/icons/cheveron-white.svg")]
+
+
+
+
+
+
+
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

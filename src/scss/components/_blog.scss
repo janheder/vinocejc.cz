@@ -1,0 +1,10 @@
+.blog-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+@media screen and (max-width: 991px){
+    .blog-side{
+        display: none;
+    }
+}

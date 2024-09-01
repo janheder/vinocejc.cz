@@ -1,0 +1,45 @@
+.stepper{
+    height: 54px;
+    position: relative;    
+    width: 120px;
+    color: $gray-900;
+}
+.stepper input{
+    height: 54px;
+    border: 1px solid $gray-300;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    appearance: none;
+}
+.stepper input::-webkit-outer-spin-button,
+.stepper input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+.stepper input{
+  -moz-appearance: textfield;
+}
+.stepper span{
+    height: 54px;
+    position: absolute;
+    top: 0;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+.stepper .minus{
+    height: 54px;
+    left: 0;
+}
+.stepper .plus{
+    height: 54px;
+    right: 0;
+}

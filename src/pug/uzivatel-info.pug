@@ -1,0 +1,31 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "uzivatel-info";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page   
+                    .cart-empty
+                        .cart-empty__img 
+                            img(src="img/user-complete.svg" alt="Vaše heslo bylo úspěšně obnoveno")
+                        h1.cart-empty__title Vaše heslo bylo úspěšně obnoveno
+                        p.cart-empty__text Na váš email jsme zaslali pokyny pro změnu hesla. Poté se budete moct znovu přihlásit
+                        a.btn.--green(href="/") Zpět do obchodu
+
+
+
+
+
+            include components/_contact-section.pug
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

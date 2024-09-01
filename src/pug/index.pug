@@ -1,0 +1,133 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "index";
+    include template/_head.pug  
+
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_carousel.pug
+
+            include components/_points-section.pug
+
+
+
+            section.products
+                .container
+                    h1 Novinky a akční ceny
+                    .products-grid
+                        include components/_product-card.pug
+                        include components/_product-card-unavailable.pug
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+
+            include components/_categories-section.pug
+
+            section(id="ratingSection")
+                .container
+                    .rating-section-inner
+                        .rating-content
+                            .rate-average-inner
+                                .span.rate-average 4,9
+                
+                                span.rate-star-wrap
+                                    .stars
+                                        a.star.star-on
+                                        a.star.star-on
+                                        a.star.star-on
+                                        a.star.star-on
+                                        a.star.star-off
+    
+                            .rating-content-title
+                                h3 Co o nás říkají naši zákazníci
+                                .rating-content-text
+
+                                    span(id="ratingSectionCount")
+                                        span.stars-label 499 hodnocení
+                                    
+                                    a(href="/hodnoceni-obchodu") Zobrazit více hodnocení
+                            
+                    
+                        .vote-grid
+                            .vote-wrap
+                                .vote-header
+                                    span.vote-pic
+                                    
+                                    span.vote-summary
+                                        span.vote-name.vote-name--nowrap
+                                            span Roman
+                                            span 1.1.1970
+                                
+                                        span.vote-rating
+                                            .stars
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-off
+                                                
+                                            .vote-checked Ověřená recenze
+
+                                .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                            
+                            .vote-wrap
+                                .vote-header
+                                    span.vote-pic
+                                    
+                                    span.vote-summary
+                                        span.vote-name.vote-name--nowrap
+                                            span Roman
+                                            span 1.1.1970
+                                
+                                        span.vote-rating
+                                            .stars
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-off
+
+                                            .vote-checked Ověřená recenze
+
+                                .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                            .vote-wrap
+                                .vote-header
+                                    span.vote-pic
+                                    
+                                    span.vote-summary
+                                        span.vote-name.vote-name--nowrap
+                                            span Roman
+                                            span 1.1.1970
+                                
+                                        span.vote-rating
+                                            .stars
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-on
+                                                a.star.star-off
+
+                                            .vote-checked Ověřená recenze
+
+                                .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+
+                        </div>
+                    </div>
+
+            include components/_news-section.pug
+
+            include components/_contact-section.pug
+
+            include components/_social-section.pug
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

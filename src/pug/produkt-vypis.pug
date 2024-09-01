@@ -1,0 +1,87 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "produkt-vypis";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            section.page-heading
+                .container
+                    h1 Dřevěné krabice
+                    div(id="pageDescription") 
+                        p Jednoduchý, často velmi podceňovaný předmět, který však může spojit funkčnost s krásným vzhledem a být tak nejen velmi užitečný... #[span.read-more(id="readMore") Číst více]
+                        
+                    div(id="pageDescriptionFull") 
+                        p Jednoduchý, často velmi podceňovaný předmět, který však může spojit funkčnost s krásným vzhledem a být tak nejen velmi užitečný jednoduchý, často velmi podceňovaný předmět, který však může spojit funkčnost s krásným vzhledem a být tak nejen velmi užitečný
+                        span.read-more.--less(id="readLess") Skrýt popis
+                script.
+                    document.getElementById('readMore').onclick = function() {
+                        document.getElementById('pageDescription').classList.toggle('--active');
+                    }
+                    document.getElementById('readLess').onclick = function() {
+                        document.getElementById('pageDescription').classList.toggle('--active');
+                    }
+
+            section.subcategories
+                .container
+                    .row 
+                        - for (var i=0; i<8; i++)
+                            .col-8.col-sm-6.col-md-3
+                                .subcategories__single
+                                    a.subcategories__link(href="/produkt-vypis.html") 
+                                        .subcategories__img
+                                            img.lazyload(src="img/load-symbol.svg" data-src="img/product-thumb-small.jpg" alt="Krabice na alkohol" title="Krabice na alkohol" width="46" height="46")
+                                        .subcategories__title Krabice na alkohol
+
+
+
+            section.products
+                .container
+                    .products-sort
+                        form(method="get") 
+                            .products-sort__single
+                                input(type="radio" id="sort-1" name="sort-products" checked required onchange="this.form.submit()" value="1")
+                                label(for="sort-1") Nejprodávanější
+                            .products-sort__single
+                                input(type="radio" id="sort-2" name="sort-products" required onchange="this.form.submit()" value="2")
+                                label(for="sort-2") Od nejnovějšího
+                            .products-sort__single
+                                input(type="radio" id="sort-3" name="sort-products" required onchange="this.form.submit()" value="3")
+                                label(for="sort-3") Od nejlevnějšího
+                            .products-sort__single
+                                input(type="radio" id="sort-4" name="sort-products" required onchange="this.form.submit()" value="4")
+                                label(for="sort-4") Od nejdražšího
+
+
+                    .products-heading
+                        include components/_filter.pug
+
+                        include components/_pagination.pug
+
+                    
+                    .products-count Zobrazeno 12 z 160 produktů
+
+                    .products-grid
+                        
+                        - for (var i=0; i<9; i++)
+                            include components/_product-card.pug
+
+
+                    .products-footer
+                        a.btn(href="#") Načíst další produkty
+                        include components/_pagination.pug
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

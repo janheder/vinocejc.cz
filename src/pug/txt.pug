@@ -1,0 +1,72 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading
+                    .container
+                        h1 Textová stránka
+                section.page-content
+                    .container 
+                    
+                        h1 Nadpis H1
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        h2 Nadpis H2
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        h3 Nadpis H3
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        h4 Nadpis H4
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        h5 Nadpis H5
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        h6 Nadpis H6
+                        p Chcete nám sdělit #[a(href="#") Normální odkaz] ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře. Napsat do něj můžete také upřesňující informace o místě, kam máme Vaše zboží doručit (nejbližší orientační bod apod.)
+                        
+                        strong Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.
+                        b Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.
+                        i Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.
+                        u Chcete nám sdělit ještě nějakou důležitou zprávu k vaší objednávce? Využijte prosím, tohoto formuláře.
+
+                        p Chcete nám sdělit ještě nějakou důležitou #[strong zprávu k vaší objednávce?] #[i Využijte prosím, tohoto formuláře.]
+
+
+                        h4 Seznam
+                        ul
+                            li Napsat do něj můžete také upřesňující
+                            li Využijte prosím, tohoto formuláře.
+
+                        h4 Tabulky
+                        table.table
+                            tr
+                                th Po - Pá
+                                td 9:00 - 17:00
+                            tr
+                                th Po - Pá
+                                td 9:00 - 17:00
+
+                        
+
+                        img(src=URLbase+"img/news-thumb-large.jpg" alt="#" title="#")
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

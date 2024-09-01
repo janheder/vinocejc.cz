@@ -1,0 +1,69 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading
+                    .container
+                        h1 O nákupu
+                section.page-content
+                    .container 
+                        .page-content__grid
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/obchodni-podminky.svg" alt="")
+                                h2 Obchodní podmínky
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/doprava-a-platba.svg" alt="")
+                                h2 Doprava a platba
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/reklamace.svg" alt="")
+                                h2 Reklamace
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/vyhody-nakupu.svg" alt="")
+                                h2 Výhody nákupu
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/osobni-udaje.svg" alt="")
+                                h2 Ochrana osobních údajů
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+
+                            a.page-content__gridItem(href="#")
+                                img(src="img/o-nakupu/kontakty.svg" alt="")
+                                h2 Kontakty
+                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean placerat. Nulla quis diam.
+                                span.btn Více informací
+
+
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

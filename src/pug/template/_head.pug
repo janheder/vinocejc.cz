@@ -1,0 +1,79 @@
+head
+	meta(charset="utf-8")
+	meta(content="IE=edge" http-equiv="X-UA-Compatible")
+	meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" name="viewport")
+	title #{title}
+	meta(content="index,follow,snippet,archive" name="robots")
+	meta(content=metaDescription name="description")
+	meta(content=metaKeywords lang="cs" name="keywords")
+	meta(content=metaAuthor name="author")
+
+	link(rel="preload" href="fonts/CerebriSans-Regular.woff2" as="font" type="font/woff2" crossorigin)
+	link(rel="preload" href="fonts/CerebriSans-Medium.woff2" as="font" type="font/woff2" crossorigin)
+
+	link(rel="canonical" href="https://eshop.eline.pages.dev/"+slug)
+	meta(property="og:locale" content="cs_CZ")
+	meta(property="og:type" content="website")
+	meta(property="og:title" content=title)
+	meta(property="og:description" content=metaDescription)
+	meta(property="og:url" content=metaURL)
+	meta(property="og:site_name" content=metaSitename)
+	meta(property="og:image" content=metaTwitterImg)
+	meta(property="og:image:secure_url" content=metaTwitterImg)
+	meta(name="twitter:card" content="summary")
+	meta(name="twitter:site" content=metaTwitterName)
+	meta(name="twitter:title" content=title)
+	meta(name="twitter:description" content=metaDescription)
+	meta(name="twitter:image" content=metaTwitterImg)
+
+	link(rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png")
+	link(rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png")
+	link(rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png")
+	link(rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png")
+	link(rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png")
+	link(rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png")
+	link(rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png")
+	link(rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png")
+	link(rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png")
+	link(rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png")
+	link(rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png")
+	meta(name="msapplication-TileColor" content="#24272D")
+	meta(name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png")
+
+
+	link(rel="manifest" href="/manifest.json")
+	meta(name="theme-color" content="#ffffff")
+
+
+	// Plugins CSS
+
+
+	// Custom CSS
+	link(href="css/style.min.css" rel="stylesheet" id="stylesheet")
+	script(src="https://www.ppl.cz/sources/map/main.js" async defer)
+	link(href="https://www.ppl.cz/sources/map/main.css" rel="stylesheet")
+
+
+	script.
+		/*
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:2461470,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		*/
+
+	script.
+		const storedStyle = localStorage.getItem('selectedStyle');
+		if (storedStyle) {
+			switchStyle(storedStyle);
+		}
+		function switchStyle(styleName) {
+			document.getElementById('stylesheet').href = styleName;
+			localStorage.setItem('selectedStyle', styleName);
+		}

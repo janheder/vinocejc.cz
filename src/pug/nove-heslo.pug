@@ -1,0 +1,38 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "nove-heslo";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+        
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page.--narrow
+                    section.page-heading
+                        h1 Obnovení hesla
+                        p Zadejte své nové heslo
+                    
+                    form(method="post" id="password-form")
+
+                        .form-group     
+                            label(for="new-password") Heslo
+                            input(type="password" id="new-password" name="new-password" required)
+                      
+
+                        .form-group 
+                            button.btn.--fullWidth(name="new-password-submit" id="new-password-submit") Potvrdit měnu hesla #[img(src="img/icons/cheveron-white.svg")]
+
+
+
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

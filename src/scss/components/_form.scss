@@ -1,0 +1,177 @@
+form{
+
+}
+
+input, select{
+    height: 54px;
+    padding: 0 20px;
+    display: flex;
+    border: 1px solid $gray-300;
+    font-size: 15px;
+    background-color: $white;
+    color: $gray-900;
+
+}
+.form-group input{
+    &:required:valid{
+        border-color: $green-500;
+    }
+    /*
+    &:required:invalid:not(:placeholder-shown){
+        border-color: $red-500;
+    }
+    */
+}
+select{
+    appearance: none;
+    position: relative;
+    background-image: url("../img/icons/cheveron.svg");
+    background-position: right 20px center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 0 50px 0 20px;
+    background-color: $white;
+}
+textarea{
+    padding: 20px;
+    display: flex;
+    border: 1px solid $gray-300; 
+    font-size: 16px;
+    background-color: $white;
+}
+button{
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-group{
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label{
+    padding-bottom: 2px;
+}
+.form-group label a[data-micromodal-trigger]{
+    color: $green-500;
+    cursor: pointer;
+}
+.form-group .label-subtext{
+    font-size: 14px;
+    color: $gray-500;
+    padding-top: 5px;
+}
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"]{
+
+}
+.form-group input[type="password"]{
+
+}
+.form-group input[type="file"]{
+    padding: 12px;
+}
+
+.form-group input:disabled, .form-group select:disabled{
+    border: 0;
+    padding-left: 0;
+    height: 28px;
+    background-image: none;
+    margin-bottom: -10px;
+  }
+
+.show-password{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    cursor: pointer;
+    background: url("../img/icons/show.svg");
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: 0;
+    opacity: 0.5;
+    transition: 0.2s ease opacity;
+    height: 54px;
+    width: 54px;
+    bottom: 0;
+    right: 0;
+
+    &:hover, &:active, &:focus{
+        opacity: 1;
+    }
+}
+
+.form-spacer{
+    height: 40px;
+}
+
+.form-group.--checkbox{
+
+}
+.form-group.--checkbox > label{
+    padding: 10px 20px 10px 45px;
+    height: auto;
+    border: 1px solid $gray-300;
+    display: block;
+    cursor: pointer;
+    span{
+        color: $gray-500;
+    }
+}
+
+.form-group.--checkbox > input{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    padding: 0;
+    border: 1px solid $gray-900;
+}
+.form-group.--checkbox > input:checked{
+    background-color: $gray-900;
+    background-image: url("../img/icons/check-white.svg");
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.form-collapse{
+    display: none;
+    padding: 20px 0 0 0;
+}
+
+.form-group.--checkbox > input:checked + .form-collapse{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 575px){
+    .form-spacer{
+        height: 20px;
+    }
+}
+
+
+.form-subtitle{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $gray-300;
+    font-weight: 500;
+    width: 100%;
+    max-width: 540px;
+}
+.form-alert{
+    width: 100%;
+    max-width: 540px;
+    margin-top: 20px; 
+    background: rgba($green-500,0.1);
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: -20px;
+}

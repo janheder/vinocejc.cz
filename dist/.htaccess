@@ -1,0 +1,36 @@
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+
+Require ip 90.180.12.225
+Require ip 93.185.11.161
+Require ip 93.185.15.23
+Require ip 86.49.244.246
+Require ip 78.80.122.64
+Require ip 188.175.52.253
+Require ip 188.175.52.176
+Require ip 91.139.33.94
+Require ip 86.49.245.5
+Require ip 85.160.
+Require ip 89.31.14.137
+Require ip 86.49.250.166 
+Require ip 37.48.9.101
+Require ip 85.160.34.220
+Require ip 86.49.245.32
+
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+
+RewriteCond %{REQUEST_URI} !^admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(pdf|js|ico|gif|jpg|png|webp|css|rar|zip|doc|csv|xls|xml|svg|avi|ogg|mp4)$ index.php [L]
+
+#RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+#RewriteRule !index\.php$ /index.php [L,QSA]
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>

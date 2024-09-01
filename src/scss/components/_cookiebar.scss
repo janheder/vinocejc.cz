@@ -1,0 +1,54 @@
+#cookiebar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $gray-900;
+    padding: 10px 0;
+    z-index: 9;
+}
+.cookiebar-wrapper{
+    max-width: 1460px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center;
+}
+.cookiebar-content{
+    display: flex;
+    flex-grow: 1;
+    color: $white;
+    flex-wrap: wrap;
+}
+.cookiebar-desciption{
+    margin-right: 10px;
+}
+.cookiebar-link a{
+
+    color: $white;
+    opacity: 0.8;
+
+    &:hover{
+        color: $white;
+        opacity: 1;
+    }
+}
+.cookiebar-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background: $white;
+    color: $gray-900;
+    font-weight: 500;
+    height: 48px;
+    border: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+@media screen and (max-width: 575px){
+    .cookiebar-content{
+        font-size: 14px;
+    }
+}

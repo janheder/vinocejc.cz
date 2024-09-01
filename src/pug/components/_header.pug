@@ -1,0 +1,85 @@
+header
+    .header-top
+        .container 
+            .header-top__tel 
+                small Máte dotaz?
+                img(src="img/icons/phone-white.svg" alt="+420 605 337")
+                span +420 605 337 238 
+                small (po–pá 7:30 – 14:30)
+            .header-top__links
+                a(href="/o-nakupu.html") Vše o nákupu
+                a(href="/txt.html") Doprava
+                a(href="/kontakty.html") Kontakty
+
+
+    .header-main  
+        .container 
+            div(id="navToggle")
+                span
+
+            a.logo(href="/")
+                img(src="img/logo.svg" alt="eshop.eline.cz" title="eshop.eline.cz" width="150" height="50")
+
+            .search 
+                .search-wrapper     
+                    form.search-form(method="post") 
+                        input.search__input(type="text" id="searchbox" autocomplete="off" placeholder="Hledejte název produktu, značku nebo typ")
+                        button.search__button
+                            img(src="img/icons/search.svg" alt="Vyhledávání" width="16" height="16")
+                        include _searchAutocomplete.pug
+
+
+
+            div(id="searchToggle")
+                img(src="img/icons/search-big.svg" alt="Vyhledávání")
+
+            .header-nav
+
+
+                .user(data-micromodal-trigger="modal-login")
+                    .user__icon
+                        img(src="img/icons/user.svg" alt="Přihlášení")
+                    div.user__title Přihlášení
+
+                //   
+                    .user.--active(id="userToggle")
+                        .user__icon
+                            img(src="img/icons/user.svg" alt="Přihlášení")
+                        .user__wrap
+                            .user__text Přihlášen jako
+                            .user__title Petr Novák
+                        .user__dropdown(id="userDropdown")
+                            a(href="/uzivatelsky-ucet.html") Uživatelský účet
+                            a(href="/") Odhlásit
+
+
+                            
+
+                a.cart.--active(href="/kosik-1.html")
+                    .cart__icon            
+                        img(src="img/icons/cart.svg" alt="Košík")
+                        .cart__number 2
+                    .cart-wrap
+                        .cart-title Nákupní košík
+                        .cart-price 2 599 Kč
+
+                // PUG
+                    a.cart(href="/kosik-prazdny.html")
+                        .cart__icon            
+                            img(src="img/icons/cart.svg" alt="Košík")
+                        .cart-wrap
+                            .cart-title Nákupní košík
+
+                // HTML
+                    <a class="cart" href="/kosik-prazdny.html">
+                        <div class="cart__icon">
+                            <img src="img/icons/cart.svg" alt="Košík">
+                        </div>
+                        <div class="cart-wrap">
+                            <div class="cart-title">Nákupní košík</div>
+                        </div>
+                    </a>
+
+
+
+#darkBackdrop

@@ -1,0 +1,653 @@
+#ratingSection .rating-section-inner {
+    padding: 60px 0;
+    border-top: 2px solid #f9f9f9;
+    border-bottom: 2px solid #f9f9f9
+}
+
+#ratingSection .rating-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px
+}
+
+#ratingSection .rating-content-title {
+    margin-left: 20px
+}
+
+#ratingSection .rating-content-text {
+    display: flex;
+    margin-top: 10px
+}
+
+#ratingSectionCount {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #d9dfdd
+}
+
+#ratingSection .rating-content-title h3 {
+    font-size: 26px;
+    margin-bottom: 0;
+    width: auto
+}
+
+#ratingSection .rating-content-title a {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0
+}
+
+#ratingSection .rate-average-inner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0
+}
+
+#ratingSection .stars-label {
+    display: none
+}
+
+#ratingSectionCount .stars-label {
+    display: flex
+}
+
+#ratingSection .vote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px
+}
+
+#ratingSection .vote-wrap {
+    border: 0;
+    padding: 0
+}
+
+#ratingSection .vote-time {
+    display: none
+}
+
+#ratingSection .vote-header {
+    display: flex
+}
+
+#ratingSection .vote-pic {
+    height: 40px;
+    width: 40px;
+    background-color: #f5f5f5;
+    background-image: url("user.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    margin-right: 12px;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+#ratingSection .vote-pic * {
+    display: none
+}
+
+#ratingSection .vote-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%
+}
+
+#ratingSection .rate-average {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 10px
+}
+
+#ratingSection .vote-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 500
+}
+
+#ratingSection .vote-name span:last-child {
+    color: #6e6e6e;
+    font-weight: 400;
+    font-size: 14px
+}
+
+#ratingSection .stars {
+    display: flex
+}
+
+#ratingSection .stars .star {
+    height: 13px;
+    width: 13px;
+    display: flex;
+    background-size: 100%
+}
+
+#ratingSection .vote-content {
+    font-style: normal;
+    color: #6d6c79;
+    line-height: 1.5;
+    margin-top: 15px;
+    font-size: 14px
+}
+
+@media screen and (max-width: 991px) {
+    #ratingSection {
+        padding: 60px 0 40px
+    }
+
+    #ratingSection .vote-grid {
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        grid-gap: 20px;
+        padding-bottom: 20px
+    }
+
+    #ratingSection .vote-wrap {
+        min-width: 300px
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #ratingSection {
+        padding: 40px 0
+    }
+
+    #ratingSection .rating-content-title h3 {
+        font-size: 20px;
+        line-height: 1.2
+    }
+
+    #ratingSection .vote-content {
+        line-height: 1.3
+    }
+
+    #ratingSection .rating-content-text {
+        flex-direction: column
+    }
+
+    #ratingSectionCount {
+        border: 0;
+        margin: 0
+    }
+}
+
+.vote-grid .vote-rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center
+}
+
+.vote-grid .vote-checked {
+    font-size: 13px;
+    color: #399841;
+    display: flex;
+    align-items: center
+}
+
+.vote-grid .vote-checked::before {
+    content: "";
+    background-size: 100%;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    background-image: url("check.svg");
+    margin-right: 5px
+}
+
+.page-content .votepage-content {
+    display: flex;
+    margin-top: 40px;
+    gap: 60px
+}
+
+.page-content .votepage-summary {
+    width: 400px;
+    flex-shrink: 0;
+    text-align: center
+}
+
+.page-content .rate-average-wrap {
+    background: #fff;
+    padding: 50px 40px;
+    border: 1px solid #e5e5e5
+}
+
+.page-content .rate-star-wrap .stars {
+    display: flex;
+    justify-content: center
+}
+
+.page-content .rate-average-wrap .rate-average {
+    font-size: 36px;
+    font-weight: 600;
+    display: inline-flex;
+    background: #f5f5f5;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 0;
+    color: #6e6e6e
+}
+
+.page-content .rate-star-wrap .star {
+    height: 30px;
+    width: 30px
+}
+
+.page-content .stars-label {
+    padding-top: 10px
+}
+
+.page-content .vote-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    height: 100%
+}
+
+.page-content .vote-wrap {
+    background: #fff;
+    padding: 0px 0px 40px 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0px;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    height: auto
+}
+
+.page-content .vote-header {
+    order: 10;
+    display: flex
+}
+
+.page-content .vote-summary {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    line-height: 1;
+    justify-content: center
+}
+
+.page-content .vote-name {
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 5px
+}
+
+.page-content .vote-rating .stars {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.page-content .vote-checked {
+    color: #399841;
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    font-size: 14px
+}
+
+.page-content .vote-checked::before {
+    content: "";
+    background-size: 100%;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    background-image: url("check.svg");
+    margin-right: 5px
+}
+
+.page-content .vote-time {
+    color: #6e6e6e;
+    font-size: 14px
+}
+
+.page-content .vote-content {
+    order: 0;
+    margin-top: 50px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 150%
+}
+
+.page-content .stars .star {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    background-image: url("star-empty.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px
+}
+
+.page-content .vote-pic {
+    height: 40px;
+    width: 40px;
+    background-color: #f5f5f5;
+    background-image: url("user.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    margin-right: 12px;
+    border-radius: 50%;
+    flex-shrink: 0
+}
+
+.page-content .rate-graph {
+    margin-top: 20px
+}
+
+.page-content .rate-graph .rate-list {
+    display: flex;
+    align-items: center;
+    padding: 5px 0
+}
+
+.page-content .rate-graph .rate-value {
+    width: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: #6e6e6e;
+    padding-right: 5px
+}
+
+.page-content .rate-graph .rate-star {
+    display: flex;
+    align-items: center
+}
+
+.page-content .rate-graph .rate-block {
+    display: flex;
+    flex-grow: 1;
+    background: #f5f5f5;
+    height: 8px;
+    margin-left: 15px
+}
+
+.page-content .rate-graph .rate-list[data-score="5"] .rate-bar {
+    background: #7bb82a
+}
+
+.page-content .rate-graph .rate-list[data-score="4"] .rate-bar {
+    background: #bae637
+}
+
+.page-content .rate-graph .rate-list[data-score="3"] .rate-bar {
+    background: #d69e2e
+}
+
+.page-content .rate-graph .rate-list[data-score="2"] .rate-bar {
+    background: #ed8936
+}
+
+.page-content .rate-graph .rate-list[data-score="1"] .rate-bar {
+    background: #a8071a
+}
+
+.page-content .rate-graph .rate-bar {
+    display: flex
+}
+
+.page-content .rate-graph .rate-count {
+    display: none
+}
+
+.page-content .rate-graph .stars .star {
+    height: 14px;
+    width: 14px
+}
+
+@media screen and (max-width: 991px) {
+    .page-content .vote-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0px
+    }
+
+    .page-content .votepage-content {
+        gap: 40px
+    }
+
+    .page-content .votepage-summary {
+        width: 360px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-content .vote-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0px
+    }
+
+    .page-content .votepage-content {
+        flex-direction: column
+    }
+
+    .page-content .votepage-summary {
+        width: 100%
+    }
+}
+
+.stars .star.star-on {
+    background-image: url("star-full.svg")
+}
+
+.stars .star.star-off {
+    background-image: url("star-empty.svg")
+}
+
+
+
+.infomessage {
+    background-color: rgba(57,152,65,.1);
+    color: #399841;
+    padding: 7px 15px;
+    padding-left: 50px;
+    background-image: url("info-green.svg");
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+
+.review-thanks,
+.review-error {
+    background-color: rgba(57, 152, 65, .1);
+    color: #399841;
+    width: 100%;
+    max-width: 820px;
+    padding: 80px 110px 60px 110px;
+    margin: 60px auto 40px auto;
+    text-align: center;
+}
+
+.review-thanks h2,
+.review-error h2 {
+    padding-top: 30px;
+    font-size: 26px;
+}
+
+.review-thanks img,
+.review-error img {
+    height: 80px;
+
+}
+
+.review-error {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .rating-box span{
+
+  }
+  .rating-box .rating-container {
+    direction: rtl !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .rating-box .rating-container label {
+    display: inline-block;
+
+    color: #d4d4d4;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .rating-box .rating-container input {
+    display: none;
+  }
+  .rating-box .rating-container label:hover, .rating-box .rating-container label:hover ~ label, .rating-box .rating-container input:checked ~ label {
+    color: gold;
+  }
+  @media screen and (max-width: 575px) {
+    .review-thanks,
+    .review-error {
+        max-width: 100%;
+        padding: 60px 20px 50px 20px;
+        margin: 40px auto 40px auto;
+    }
+}
+
+.page.--narrow {
+    width: 100%;
+    max-width: 820px;
+    padding: 80px 110px 60px 110px;
+    border: 1px solid #e5e5e5;
+    margin: 60px auto 40px auto;
+}
+@media screen and (max-width: 991px){
+    .page.--narrow {
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 60px 60px 60px;
+}
+}
+
+@media screen and (max-width: 767px){
+   .page.--narrow {
+    padding: 40px 20px 40px 20px;
+} 
+}
+
+@media screen and (max-width: 575px){
+    .page.--narrow {
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+}
+
+.page.--narrow .page-heading {
+    padding-top: 0;
+}
+.page.--narrow .page-heading h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 0;
+}
+.page.--narrow .form-group {
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.page.--narrow .form-group label {
+    padding-bottom: 2px;
+}
+.page.--narrow .form-group input, .page.--narrow .form-group select {
+    height: 54px;
+    padding: 0 20px;
+    display: flex;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    background-color: #fff;
+    color: #222427;
+}
+
+.page.--narrow .form-group textarea {
+    padding: 20px;
+    display: flex;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.page.--narrow .btn {
+    color: #fff;
+    font-size: 15px;
+    min-height: 52px;
+    height: 100%;
+    padding: 0rem 30px;
+    background: #222427;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    white-space: normal;
+    transition: .2s ease background;
+}
+.page.--narrow .rating-box .rating-container input {
+    display: none;
+}
+
+.page.--narrow .form-group.--checkbox>label {
+    padding: 15px 20px 15px 45px;
+    height: auto;
+    border: 1px solid #e5e5e5;
+    display: block;
+    cursor: pointer;
+}
+.page.--narrow .form-group.--checkbox>input {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    height: 14px;
+    width: 14px;
+    padding: 0;
+}

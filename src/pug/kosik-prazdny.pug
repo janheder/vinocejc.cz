@@ -1,0 +1,30 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-prazdny";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page   
+                    .cart-empty
+                        .cart-empty__img 
+                            img(src="img/cart-empty.svg" alt="Váš košík je prázdný")
+                        h1.cart-empty__title Váš košík je prázdný
+                        p.cart-empty__text Pro pokračování v nákupu prosím nejprve vložte vybraný produkt do košíku.
+                        a.btn(href="/") Začít nakupovat
+
+
+
+
+            include components/_contact-section.pug
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

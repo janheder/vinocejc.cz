@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/CerebriSans-Regular.woff2") format("woff2"),
+         url("../fonts/CerebriSans-Regular.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/CerebriSans-Italic.woff2") format("woff2"),
+         url("../fonts/CerebriSans-Italic.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/CerebriSans-Medium.woff2") format("woff2"),
+         url("../fonts/CerebriSans-Medium.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/CerebriSans-Bold.woff2") format("woff2"),
+         url("../fonts/CerebriSans-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@import url(https://fonts.bunny.net/css?family=albert-sans:400,500,600);
+
+$font-family-primary: "Albert Sans", sans-serif;
+$font-family-secondary: "Albert Sans", sans-serif;
+$font-family-system: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

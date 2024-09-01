@@ -1,0 +1,58 @@
+.filter(id="filter")
+    .filter__button(id="filterToggle") Filtrovat produkty #[img(src="img/icons/filter.svg" alt="Filtr")]
+    .filter__content(id="filterContent")
+        form.filter__form(method="post") 
+
+
+            .form-group.--checkbox
+                label(for="filter-stock") Produkty skladem
+                input(type="checkbox" name="filter-stock" id="filter-stock")
+
+            .form-group.--checkbox
+                label(for="filter-delivery") Doprava zdarma
+                input(type="checkbox" name="filter-delivery" id="filter-delivery")
+
+            .filter__item 
+                p.filter__title Zvolit rozmezí ceny 
+                .range-slider
+                    .range-slider-wrap
+                        input(type="range" name="cena_od" id="filter-range-input-1" min="0" max="15000" step="1" value="0")
+                        input(type="range" name="cena_do" id="filter-range-input-2" min="0" max="15000" step="1" value="15000")
+                    .range-slider-value
+                        label(for="filter-range-input-1" id="filter-range-value-1") 1 Kč
+                        label(for="filter-range-input-2" id="filter-range-value-2") 15000 Kč
+                                   
+
+            .filter__item 
+                p.filter__title Podle štítku  
+
+                .form-group.--checkbox
+                    label(for="filter-new") Novinka
+                    input(type="checkbox" name="filter-new" id="filter-new")
+
+                .form-group.--checkbox
+                    label(for="filter-sale") Akce
+                    input(type="checkbox" name="filter-sale" id="filter-sale")
+
+                .form-group.--checkbox
+                    label(for="filter-recommended") Doporučujeme
+                    input(type="checkbox" name="filter-recommended" id="filter-recommended")
+
+
+
+            button.btn.--fullWidth(name="filter-submit" id="filter-submit") Filtrovat #[img(src="img/icons/cheveron-white.svg" alt="Filtrovat")]
+
+script.
+
+
+    document.getElementById('filter-range-input-1').addEventListener('input', function() {
+        var i1 = document.getElementById('filter-range-input-1').value ;
+        document.getElementById('filter-range-value-1').innerHTML =  i1 + " Kč";
+    });
+
+    document.getElementById('filter-range-input-2').addEventListener('input', function() {
+        var i2 = document.getElementById('filter-range-input-2').value ;
+        document.getElementById('filter-range-value-2').innerHTML =  i2 + " Kč";
+    });
+
+

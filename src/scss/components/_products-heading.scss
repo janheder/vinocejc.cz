@@ -1,0 +1,10 @@
+.products-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 575px){
+    .products-heading{
+        flex-direction: column;
+    }
+}

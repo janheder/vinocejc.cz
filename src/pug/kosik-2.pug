@@ -1,0 +1,151 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-2";
+    include template/_head.pug  
+    body.cart
+        include components/_modal-login.pug
+
+        include components/_modal-delivery.pug
+        include components/_modal-delivery2.pug
+        include components/_modal-ppl.pug
+
+        include components/_header.pug
+
+        main
+            section.cart-heading
+                .container
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/cart-big.svg" alt="1. Nákupní košík")
+                        .cart-heading__title 1. Nákupní košík
+                    .cart-heading__item.--active
+                        .cart-heading__icon
+                            img(src="img/icons/car.svg" alt="2. Doprava a platba")
+                        .cart-heading__title 2. Doprava a platba
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/personal-data.svg" alt="3. Osobní údaje")
+                        .cart-heading__title 3. Osobní údaje
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/summary.svg" alt="4. Shrnutí objednávky")
+                        .cart-heading__title 4. Shrnutí objednávky
+
+
+            section.cart-content
+                
+                .container
+                    .row 
+                        .col-12.col-md-8
+                            .cart-table
+
+                                form.cart-content__form(method="post" id="cart-form")
+
+                                    .cart-table__title Způsob dopravy
+                                    .cart-table-shipping
+
+                                        label.cart-table-shipping-item(for="delivery-1" onclick="MicroModal.show('modal-delivery');")
+                                            input(type="radio" id="delivery-1" name="delivery-1" required checked)  
+                                            .cart-table-shipping-img
+                                                img(src="img/ceska-posta.png" alt="Česká pošta - Balík do ruky")
+                                            .cart-table-shipping-text Česká pošta - Balík do ruky #[small Doba dodání 2-4 dny] #[span Vybraná pobočka: Praha 1]
+                                            .cart-table-shipping-price #[span 5.22] Kč
+
+                                        label.cart-table-shipping-item(for="delivery-2" onclick="MicroModal.show('modal-delivery2');")
+                                            input(type="radio" id="delivery-2" name="delivery-1" required)  
+                                            .cart-table-shipping-img
+                                                img(src="img/ceska-posta.png" alt="Česká pošta - Balík do ruky")
+                                            .cart-table-shipping-text Zásilkovna
+                                            .cart-table-shipping-price #[span 99.50] Kč
+
+                                        label.cart-table-shipping-item(for="delivery-3")
+                                            input(type="radio" id="delivery-3" name="delivery-1" required disabled)  
+                                            .cart-table-shipping-img
+                                                img(src="img/ceska-posta.png" alt="Česká pošta - Balík do ruky")
+                                            .cart-table-shipping-text Česká pošta - Balík do ruky
+                                            .cart-table-shipping-price.--free #[span 0] Kč
+
+                                        label.cart-table-shipping-item(for="delivery-4")
+                                            input(type="radio" id="delivery-4" name="delivery-1" required)  
+                                            .cart-table-shipping-img
+                                                img(src="img/ceska-posta.png" alt="Česká pošta - Balík do ruky")
+                                            .cart-table-shipping-text Česká pošta - Balík do ruky 
+                                            .cart-table-shipping-price #[span 99.60] Kč
+
+                                        label.cart-table-shipping-item(for="delivery-5" onclick="MicroModal.show('modal-ppl');")
+                                            input(type="radio" id="delivery-5" name="delivery-1" required)  
+                                            .cart-table-shipping-img
+                                                img(src="img/ppl.png" alt="PPL")
+                                            .cart-table-shipping-text PPL 
+                                            .cart-table-shipping-price #[span 99.60] Kč  
+
+                                        
+
+
+                                    .cart-table__title Způsob platby
+                                    .cart-table-shipping
+
+                                         label.cart-table-shipping-item(for="payment-1")
+                                            input(type="radio" id="payment-1" name="payment-1" required checked)  
+                                            .cart-table-shipping-text Dobírka
+                                            .cart-table-shipping-price #[span 1.98 ] Kč
+
+                                         label.cart-table-shipping-item(for="payment-2")
+                                            input(type="radio" id="payment-2" name="payment-1" required)  
+                                            .cart-table-shipping-text Kartou
+                                            .cart-table-shipping-price #[span 0 ] Kč
+
+
+
+
+                                    .cart-table__footer
+                                        a.cart-table__footer-link(href="/") 
+                                            .cart-table__footer-icon
+                                                img(src="img/icons/cheveron.svg" alt="Krok zpět")
+                                            .cart-table__footer-text Krok zpět
+
+
+
+
+                        .col-12.col-md-4 
+                            aside.cart-aside
+                                .cart-aside__title Shrnutí objednávky
+                                .cart-aside__table 
+                                    .cart-aside__row 
+                                        .cart-aside__table-th Cena zboží
+                                        .cart-aside__table-td #[span(id="goodsprice") 32,99] Kč
+                                    .cart-aside__row 
+                                        .cart-aside__table-th Doprava a platba
+                                        .cart-aside__table-td #[span(id="delprice") 33,2] Kč
+                                    .cart-aside__row.--main 
+                                        .cart-aside__table-th Celková cena
+                                        .cart-aside__table-td 
+                                            div #[span(id="sumprice") 329,9] Kč 
+                                            small s DPH
+
+
+                                .cart-aside__free-shipping Nakupte ještě za 6 237 Kč a máte dopravu zdarma
+                                .cart-aside__login 
+                                    .cart-aside__login-icon 
+                                        img(src="img/icons/user.svg" alt="Už máte svůj účet?")
+                                    .cart-aside__login-content 
+                                        .cart-aside__login-title Už máte svůj účet?
+                                        .cart-aside__login-text #[a(href="#") Zaregistrujte se], nebo #[a(href="#" data-micromodal-trigger="modal-login") se přihlaste] pro jednodušší nákup.
+
+                                
+                                button.btn.--cart(name="nextstep" form="cart-form") Osobní údaje #[img(src="img/icons/cheveron-white.svg" alt="Pokračovat")]
+
+
+
+
+
+            include components/_contact-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  
+
+        script(src="/js/cart.js")

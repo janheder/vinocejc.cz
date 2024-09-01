@@ -1,0 +1,195 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading
+                    .container
+                        h1 Hodnocení obchodu
+
+                section.page-content
+                    .container 
+
+                        .infomessage Hodnocení eshopu může provést pouze zákazník, který dokončil objednávku. Po několika dnech po převzetí objednávky je zákazníkovi zaslán email, kde je uveden odkaz na hodnotící formulář.
+
+                        .votepage-content
+                            .votepage-summary
+
+                                .rate-average-wrap
+                                    .rate-average-inner
+                                        .rate-average 4,9
+                                        .rate-star-wrap
+                                            .stars
+                                                .star.star-on
+                                                .star.star-on
+                                                .star.star-on
+                                                .star.star-on
+                                                .star.star-off
+                                            .stars-label 499 hodnocení
+
+                                    .rate-graph
+                                        .rate-list(data-score="5")
+                                            .rate-star.stars
+                                                .rate-value 5
+                                                .star.star-off
+                                            .rate-block
+                                                .rate-bar(style="width: 85%;")
+                                                    
+                         
+                                        .rate-list(data-score="4")
+                                            .rate-star.stars
+                                                .rate-value 4
+                                                .star.star-off
+                                            .rate-block
+                                                .rate-bar(style="width: 15%;")
+
+
+                                        .rate-list(data-score="3")
+                                            .rate-star.stars
+                                                .rate-value 3
+                                                .star.star-off
+                                            .rate-block
+                                                .rate-bar(style="width: 7%;")
+
+
+                                        .rate-list(data-score="2")
+                                            .rate-star.stars
+                                                .rate-value 2
+                                                .star.star-off
+                                            .rate-block
+                                                .rate-bar(style="width: 5%;")  
+
+
+                                        .rate-list(data-score="1")
+                                            .rate-star.stars
+                                                .rate-value 1
+                                                .star.star-off
+                                            .rate-block
+                                                .rate-bar(style="width: 3%;")                                    
+                            .vote-grid
+
+                                .vote-wrap
+                                    .vote-rating
+                                        .stars
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-off
+
+                                    .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                    .vote-header
+                                        span.vote-pic
+                                        
+                                        .vote-summary
+                                            .vote-name.vote-name--nowrap  Roman
+                                            .vote-time 22.6.2022
+                                        
+                                        .vote-checked Ověřená recenze
+                                    
+
+                                .vote-wrap
+                                    .vote-rating
+                                        .stars
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-off
+
+                                    .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                    .vote-header
+                                        span.vote-pic
+                                        
+                                        .vote-summary
+                                            .vote-name.vote-name--nowrap  Roman
+                                            .vote-time 22.6.2022
+                                        
+                                        .vote-checked Ověřená recenze
+
+
+                                .vote-wrap
+                                    .vote-rating
+                                        .stars
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-off
+
+                                    .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                    .vote-header
+                                        span.vote-pic
+                                        
+                                        .vote-summary
+                                            .vote-name.vote-name--nowrap  Roman
+                                            .vote-time 22.6.2022
+                                        
+                                        .vote-checked Ověřená recenze
+
+
+                                .vote-wrap
+                                    .vote-rating
+                                        .stars
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-off
+
+                                    .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                    .vote-header
+                                        span.vote-pic
+                                        
+                                        .vote-summary
+                                            .vote-name.vote-name--nowrap  Roman
+                                            .vote-time 22.6.2022
+                                        
+                                        .vote-checked Ověřená recenze
+
+
+                                .vote-wrap
+                                    .vote-rating
+                                        .stars
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-on
+                                            .star.star-off
+
+                                    .vote-content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+                                    .vote-header
+                                        span.vote-pic
+                                        
+                                        .vote-summary
+                                            .vote-name.vote-name--nowrap  Roman
+                                            .vote-time 22.6.2022
+                                        
+                                        .vote-checked Ověřená recenze                         
+
+
+                                include components/_pagination.pug
+
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

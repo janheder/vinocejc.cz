@@ -1,0 +1,161 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-1";
+    include template/_head.pug  
+    body.cart
+        include components/_modal-login.pug
+
+        include components/_header.pug
+
+        main
+            section.cart-heading
+                .container
+                    .cart-heading__item.--active
+                        .cart-heading__icon
+                            img(src="img/icons/cart-big.svg" alt="1. Nákupní košík")
+                        .cart-heading__title 1. Nákupní košík
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/car.svg" alt="2. Doprava a platba")
+                        .cart-heading__title 2. Doprava a platba
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/personal-data.svg" alt="3. Osobní údaje")
+                        .cart-heading__title 3. Osobní údaje
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/summary.svg" alt="4. Shrnutí objednávky")
+                        .cart-heading__title 4. Shrnutí objednávky
+
+
+            section.cart-content
+                
+                .container
+                    .row 
+                        .col-12.col-md-8
+                            .cart-table
+                                form.cart-content__form(method="post" id="cart-form")
+                                    .cart-table__title Zboží v košíku
+
+                                    .cart-table-items    
+
+                                            .cart-item 
+                                                .cart-item-thumb-wrap
+                                                    .cart-item-thumb
+                                                        img(src="img/product-thumb-medium.jpg" alt="#" title="#")
+                                                .cart-item-content 
+                                                    .cart-item-main     
+                                                        a.cart-item-name(href="produkt-detail.html") Dřevěná bedna na 2 vína CARMEN VI
+                                                            .cart-item-name-var Zelená barva s neprůhlednými dvířky
+                                                            .cart-item-stock.--available #[img(src="img/icons/check.svg" alt="Skladem 10 ks")]Skladem 10 ks
+                                                        .cart-item-price-pc #[span 52.20] Kč/ks
+                                                        .cart-item-price #[span 52.20] Kč
+
+                                                    .cart-item-bottom
+                                                        .cart-item-stepper.stepper 
+                                                            span.minus –
+                                                            input(id="qty-stepper-input-1" class="num_items" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
+                                                            span.plus +
+
+                                                        a.cart-item-remove(href="#")   
+                                                            .cart-item-remove-icon
+                                                                img(src="img/icons/cross-alt.svg" alt="Odstranit z košíku")
+                                                            .cart-item-remove-text Odstranit z košíku
+
+
+                                            .cart-item 
+                                                .cart-item-thumb-wrap
+                                                    .cart-item-thumb
+                                                        img(src="img/product-thumb-medium.jpg" alt="#" title="#")
+                                                .cart-item-content 
+                                                    .cart-item-main     
+                                                        a.cart-item-name(href="produkt-detail.html") Dřevěná bedna na 2 vína CARMEN VI
+                                                            .cart-item-stock #[img(src="img/icons/cross.svg" alt="Skladem 10 ks")]Není skladem
+                                                        .cart-item-price-pc #[span 52,40] Kč/ks
+                                                        .cart-item-price #[span 10,40] Kč
+
+
+                                                    .cart-item-bottom
+                                                        .cart-item-stepper.stepper
+                                                            span.minus –
+                                                            input(id="qty-stepper-input-2" class="num_items" type="number" value="2" min="1" max="100" step="1" aria-label="Počet položek" required) 
+                                                            span.plus +
+
+                                                        a.cart-item-remove(href="#")   
+                                                            .cart-item-remove-icon
+                                                                img(src="img/icons/cross-alt.svg" alt="Odstranit z košíku")
+                                                            .cart-item-remove-text Odstranit z košíku
+
+
+                                            .cart-item.--code
+                                                .cart-item-thumb-wrap
+                                                    .cart-item-thumb
+                                                        img(src="img/product-thumb-medium.jpg" alt="#" title="#")
+                                                .cart-item-content 
+                                                    .cart-item-main     
+                                                        a.cart-item-name(href="produkt-detail.html") Sleva
+                                                        .cart-item-code-price(id="codePriceWrap") #[span(id="codePrice" data-percentage="10") 5.20] Kč
+      
+                                                    .cart-item-bottom
+
+                                                        a.cart-item-remove(href="#")   
+                                                            .cart-item-remove-icon
+                                                                img(src="img/icons/cross-alt.svg" alt="Odstranit z košíku")
+                                                            .cart-item-remove-text Odstranit z košíku
+
+
+                                    .cart-table__footer
+                                        a.cart-table__footer-link(href="/") 
+                                            .cart-table__footer-icon
+                                                img(src="img/icons/cheveron.svg" alt="Zpět do obchod")
+                                            .cart-table__footer-text Zpět do obchodu
+
+                                        a.cart-table__footer-link(href="#") 
+                                            .cart-table__footer-icon
+                                                img(src="img/icons/cross-alt.svg" alt="Vyprázdnit košík")
+                                            .cart-table__footer-text Vyprázdnit košík
+
+
+                        .col-12.col-md-4 
+                            aside.cart-aside
+                                .cart-aside__title Shrnutí objednávky
+                                .cart-aside__table 
+                                    .cart-aside__row 
+                                        .cart-aside__table-th Cena zboží
+                                        .cart-aside__table-td #[span(id="goodsprice") 15,60] Kč
+                                    .cart-aside__row.--main 
+                                        .cart-aside__table-th Celková cena
+                                        .cart-aside__table-td 
+                                            div #[span(id="sumprice") 15,70] Kč 
+                                            small včetně DPH
+
+
+                                .cart-aside__free-shipping(id="cartFreeShipping" data-price="5000") Nakupte ještě za 3000 Kč a máte dopravu zdarma
+                                .cart-aside__login 
+                                    .cart-aside__login-icon 
+                                        img(src="img/icons/user.svg" alt="Už máte svůj účet?")
+                                    .cart-aside__login-content 
+                                        .cart-aside__login-title Už máte svůj účet?
+                                        .cart-aside__login-text #[a(href="#") Zaregistrujte se], nebo #[a(href="#" data-micromodal-trigger="modal-login") se přihlaste] pro jednodušší nákup.
+                                form.cart-aside__code(method="post")
+                                    .form-group 
+                                        label(for="code") Mám slevový kód
+                                        input(type="text" id="code" name="code" required)
+                                        button.btn Použít
+                                
+                                button.btn.--cart(name="nextstep" form="cart-form") Doprava a platba #[img(src="img/icons/cheveron-white.svg" alt="Pokračovat")]
+
+
+
+
+
+            include components/_contact-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  
+
+        script(src="/js/cart.js")

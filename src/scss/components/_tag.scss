@@ -1,0 +1,64 @@
+.tag{
+    font-size: 12px;
+    font-weight: 400;
+    background: $gray-900;
+    color: $white;
+    height: 22px;
+    padding: 0 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    position: relative;
+}
+.tag.--sale{
+    background: $red-500;
+}
+.tag.--new{
+    background: $green-500;
+}
+.tag.--recommended{
+    background: #5A5E6A;
+}
+.tag.--top{
+    background: $gray-900;
+}
+.tag.--circleSale{
+    background: $red-500;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.tag.--circle{
+    background: #f7e517;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+}
+.tag.--free-delivery{
+    background: $green-500;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
+@media screen and (max-width:575px){
+    .tag{
+        font-size: 12px;
+        font-weight: 400;
+        height: 22px;
+        padding: 0 6px;
+        margin-bottom: 2px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='hodnoceni.css'>
+</head>
+<body>
+  <section class="page-content">
+
+    <div class="container"> 
+      <div class="review-thanks"><img src="thumbsup.svg" alt="Děkujeme za vaše hodnocení">
+        <h2>Děkujeme za vaše hodnocení</h2>
+      </div>
+      <div class="review-error"><img src="info.svg" alt="Už jste hodnotili">
+        <h2>Už jste hodnotili</h2>
+        <p>Hodnocení pro tuto objednávku 123 bylo provedeno dne XX. Objednávku nelze hodnotit opakovaně.</p>
+      </div>
+      <div class="page --narrow">
+        <section class="page-heading">
+          <h1>Nové hodnocení</h1>
+        </section>
+        <form method="post" id="review-form">
+          <div class="form-group">    
+            <label for="review-name">Jméno a Příjmení</label>
+            <input type="text" id="review-name" name="register-name" required="" minlength="2" maxlength="45">
+          </div>
+          <div class="form-group"> 
+            <div class="rating-box"><span>Zvolte počet hvězdiček:</span>
+              <div class="rating-container">
+                <input type="radio" name="rating" value="5" id="star-5" required="">
+                <label for="star-5">★</label>
+                <input type="radio" name="rating" value="4" id="star-4" required="">
+                <label for="star-4">★</label>
+                <input type="radio" name="rating" value="3" id="star-3" required="">
+                <label for="star-3">★</label>
+                <input type="radio" name="rating" value="2" id="star-2" required="">
+                <label for="star-2">★</label>
+                <input type="radio" name="rating" value="1" id="star-1" required="">
+                <label for="star-1">★                                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">    
+            <label for="review-text">Text hodnocení</label>
+            <textarea id="review-text" name="review-text" rows="8" required=""></textarea>
+          </div>
+          <div class="form-spacer"> </div>
+          <div class="form-group --checkbox">
+            <label for="review-agree">Souhlasím se <a href="#">zpracováním osobních údajů</a>.</label>
+            <input type="checkbox" name="review-agree" id="review-agree" required="">
+          </div>
+          <div class="form-group"> 
+            <button class="btn --fullWidth" name="review-submit" id="review-submit">Zveřejnit hodnocení</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

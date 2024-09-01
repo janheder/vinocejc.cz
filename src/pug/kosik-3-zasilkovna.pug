@@ -1,0 +1,205 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-3";
+    include template/_head.pug  
+    body.cart
+        include components/_modal-login.pug
+        include components/_modal-personal.pug
+
+        include components/_header.pug
+
+        main
+            section.cart-heading
+                .container
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/cart-big.svg" alt="1. Nákupní košík")
+                        .cart-heading__title 1. Nákupní košík
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/car.svg" alt="2. Doprava a platba")
+                        .cart-heading__title 2. Doprava a platba
+                    .cart-heading__item.--active
+                        .cart-heading__icon
+                            img(src="img/icons/personal-data.svg" alt="3. Osobní údaje")
+                        .cart-heading__title 3. Osobní údaje
+                    .cart-heading__item
+                        .cart-heading__icon
+                            img(src="img/icons/summary.svg" alt="4. Shrnutí objednávky")
+                        .cart-heading__title 4. Shrnutí objednávky
+
+
+            section.cart-content
+                
+                .container
+                    .row 
+                        .col-12.col-lg-8
+                            .cart-table
+
+                                form.cart-content__form(method="post" id="cart-form-user")
+
+                                    .cart-table__title Vyplňte osobní údaje
+                                    .cart-table-personal
+                                        
+                                        .form-group     
+                                            label(for="cart-name") Jméno
+                                            input(type="text" id="cart-name" name="cart-name" required)
+                                        .form-group     
+                                            label(for="cart-surname") Příjmení
+                                            input(type="text" id="cart-surname" name="cart-surname" required)
+                                        .form-group     
+                                            label(for="cart-email") Email
+                                            | <input type="email" id="cart-email" name="cart-email" required minlength="6" maxlength="255" pattern="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+                                        .form-group     
+                                            label(for="cart-tel") Telefon
+                                            | <input type="tel" id="cart-tel" name="cart-tel" required value="" pattern="\d{1,15}">
+
+                                        .form-subtitle Dodací údaje: Výdejní místo Zásilkovna
+
+                                        .form-group     
+                                            label(for="cart-street") Ulice
+                                            input(type="text" id="cart-street" name="cart-street" required disabled value="Trafika Na Harfě")
+                                        .form-group     
+                                            label(for="cart-street-n") Číslo popisné
+                                            input(type="text" id="cart-street-n" name="cart-street-n" required disabled value="Českomoravská 222/39")
+                                        .form-group     
+                                            label(for="cart-city") Město/obec
+                                            input(type="text" id="cart-city" name="cart-city" required disabled value="Praha")      
+                                        .form-group     
+                                            label(for="cart-psc") PSČ
+                                            input(type="text" id="cart-psc" name="cart-psc" required disabled value="190 00")      
+                                        .form-group     
+                                            label(for="cart-state") Stát
+                                            select(name="cart-state" id="cart-state" required disabled)   
+                                                option(value="cz") Česká republika
+                                                option(value="sk") Slovensko
+
+
+                        
+                                        .form-alert Vyplňte prosím fakturační adresu abychom vám mohli správně vygenerovat fakturu. 
+                                        .form-subtitle Fakturační údaje 
+
+                                        .form-group     
+                                            label(for="cart-fa-name") Jméno a příjmení (nepovinné)
+                                            input(type="text" id="cart-fa-name" name="cart-fa-name")
+
+                                        .form-group.--checkbox
+                                            label(for="cart-fa-company" id="faComToggle") Jsme firma a potřebujeme uvést také obchodní informace
+                                            input(type="checkbox" name="cart-fa-address" id="cart-fa-company")
+
+                                            .form-collapse
+
+                                                .form-group     
+                                                    label(for="fakturacni_jmeno") Název firmy
+                                                    input(type="text" id="fakturacni_jmeno" name="fakturacni_jmeno")
+
+                                                .form-group     
+                                                    label(for="cart-fa-ico") IČO
+                                                    input(type="text" id="cart-fa-ico" name="cart-fa-ico")
+                                                    
+                                                .form-group     
+                                                    label(for="dic") DIČ
+                                                    input(type="text" id="dic" name="dic")
+
+
+                                        .form-group     
+                                            label(for="cart-fa-street") Ulice
+                                            input(type="text" id="cart-fa-street" name="cart-fa-street" required )
+                                        .form-group     
+                                            label(for="cart-fa-street-n") Číslo popisné
+                                            input(type="text" id="cart-fa-street-n" name="cart-fa-street-n" required )
+                                        .form-group     
+                                            label(for="cart-fa-city") Město/obec
+                                            input(type="text" id="cart-fa-city" name="cart-fa-city" required  )
+                                        .form-group     
+                                            label(for="cart-fa-psc") PSČ
+                                            input(type="text" id="cart-fa-psc" name="cart-fa-psc" required )
+                                        .form-group     
+                                            label(for="cart-fa-state") Stát
+                                            select(name="cart-fa-state" id="cart-fa-state" required )   
+                                                option(value="cz") Česká republika
+                                                option(value="sk") Slovensko
+
+
+
+
+
+                                        .form-spacer 
+
+
+                                        .form-group.--checkbox
+                                            label(for="cart-register" id="regToggle") S těmito údaji se chci zaregistrovat
+                                            input(type="checkbox" name="cart-register" id="cart-register")
+
+                                            .form-collapse
+
+                                                .form-group     
+                                                    label(for="cart-register-password") Heslo 
+                                                    | <input type="password" id="cart-register-password" name="cart-register-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$" disabled>
+                                                    span.show-password(id="showCartRegisterPassword" aria-label="Zobrazit heslo")
+                                                    span.label-subtext (Minimum 8 znaků, musí obsahovat velké a malé písmena a alespoň 1 číslo)
+        
+
+                                        .form-spacer 
+
+                                        .form-group
+                                            label Vložením údajů beru na vědomí #[a(data-micromodal-trigger="modal-personal") zpracování osobních údajů]
+                          
+
+                                        .form-group.--checkbox
+                                            label(for="register-agree1") Chci odebírat newsletter a souhlasím se #[a(data-micromodal-trigger="modal-personal") zpracováním osobních údajů] za účelem zasílání informací o novinkách a slevách.
+                                            input(type="checkbox" name="register-agree1" id="register-agree1")
+
+
+
+
+
+
+                                    .cart-table__footer
+                                        a.cart-table__footer-link(href="/") 
+                                            .cart-table__footer-icon
+                                                img(src="img/icons/cheveron.svg" alt="Krok zpět")
+                                            .cart-table__footer-text Krok zpět
+
+
+
+
+                        .col-12.col-lg-4 
+                            aside.cart-aside
+                                .cart-aside__title Shrnutí objednávky
+                                .cart-aside__table 
+                                    .cart-aside__row 
+                                        .cart-aside__table-th Cena zboží
+                                        .cart-aside__table-td 3 299 Kč
+                                    .cart-aside__row 
+                                        .cart-aside__table-th Doprava a platba
+                                        .cart-aside__table-td Nevybráno
+                                    .cart-aside__row.--main 
+                                        .cart-aside__table-th Celková cena
+                                        .cart-aside__table-td 3 354 Kč #[small 2 830 Kč bez DPH]
+
+
+                                .cart-aside__free-shipping Nakupte ještě za 6 237 Kč a máte dopravu zdarma
+                                .cart-aside__login 
+                                    .cart-aside__login-icon 
+                                        img(src="img/icons/user.svg" alt="Už máte svůj účet?")
+                                    .cart-aside__login-content 
+                                        .cart-aside__login-title Už máte svůj účet?
+                                        .cart-aside__login-text #[a(href="#") Zaregistrujte se], nebo #[a(href="#" data-micromodal-trigger="modal-login") se přihlaste] pro jednodušší nákup.
+
+                                button.btn.--cart(name="nextstep" form="cart-form-user") Souhrn objednávky #[img(src="img/icons/cheveron-white.svg" alt="Pokračovat")]
+
+
+
+
+
+            include components/_contact-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  
+
+        script(src="/js/cart.js")

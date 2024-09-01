@@ -1,0 +1,130 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "registrace";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page.--narrow
+                    section.page-heading
+                        h1 Registrace
+                        p Po odeslání registrace Vám bude neprodleně doručen na e-mailovou adresu uvedenou v registračním formuláři aktivační e-mail.
+                    
+                    form(method="post" id="register-form")
+                        .form-group     
+                            label(for="register-name") Jméno
+                            input(type="text" id="register-name" name="register-name" required minlength="2" maxlength="45")
+                        .form-group     
+                            label(for="register-surname") Příjmení
+                            input(type="text" id="register-surname" name="register-surname" required minlength="2" maxlength="45")
+                        .form-group     
+                            label(for="register-email") Email
+                            | <input type="email" id="register-email" name="register-email" required minlength="6" maxlength="255" pattern="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+                        .form-group     
+                            label(for="register-tel") Telefon 
+                            | <input type="tel" id="register-tel" name="register-tel" required value="" pattern="\d{1,15}">
+                        .form-group     
+                            label(for="register-password") Heslo
+                            | <input type="password" id="heslo" name="heslo" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\w\W]{8,}$">
+                            span.show-password(id="showRegisterPassword" aria-label="Zobrazit heslo")
+                            span.label-subtext (Minimum 8 znaků, musí obsahovat velké a malé písmena a alespoň 1 číslo)
+
+                        .form-subtitle Dodací údaje
+
+                        .form-group     
+                            label(for="register-street") Ulice
+                            input(type="text" id="register-street" name="register-street" required maxlength="50")
+                        .form-group     
+                            label(for="register-street-n") Číslo popisné
+                            input(type="text" id="register-street-n" name="register-street-n" required maxlength="50")
+                        .form-group     
+                            label(for="register-city") Město/obec
+                            input(type="text" id="register-city" name="register-city" required maxlength="50")      
+                        .form-group     
+                            label(for="register-psc") PSČ
+                            input(type="text" id="register-psc" name="register-psc" required maxlength="50")      
+                        .form-group     
+                            label(for="register-state") Stát
+                            select(name="register-state" id="register-state" required)   
+                                option(value="cz") Česká republika
+                                option(value="sk") Slovensko
+
+                        .form-spacer 
+
+                        .form-group.--checkbox
+                            label(for="register-fa-address" id="faToggle") Vyplnit fakturační adresu #[span (pokud je rozdílná od dodací adresy nebo nakupuji na firmu)]
+                            input(type="checkbox" name="register-fa-address" id="register-fa-address")
+
+                            .form-collapse
+
+
+                                .form-group     
+                                    label(for="register-fa-name") Jméno a příjmení
+                                    input(type="text" id="register-fa-name" name="register-fa-name")
+
+                                .form-group.--checkbox
+                                    label(for="register-fa-company" id="faComToggle") Jsme firma a potřebujeme uvést také obchodní informace
+                                    input(type="checkbox" name="register-fa-company" id="register-fa-company")
+
+                                    .form-collapse
+
+                                        .form-group     
+                                            label(for="fakturacni_jmeno") Název firmy
+                                            input(type="text" id="fakturacni_jmeno" name="fakturacni_jmeno")
+
+                                        .form-group     
+                                            label(for="register-fa-ico") IČO
+                                            input(type="text" id="register-fa-ico" name="register-fa-ico")
+                                            
+                                        .form-group     
+                                            label(for="dic") DIČ
+                                            input(type="text" id="dic" name="dic")
+
+
+                                .form-group     
+                                    label(for="register-fa-street") Ulice
+                                    input(type="text" id="register-fa-street" name="register-fa-street")
+                                .form-group     
+                                    label(for="register-fa-street-n") Číslo popisné
+                                    input(type="text" id="register-fa-street-n" name="register-fa-street-n")
+                                .form-group     
+                                    label(for="register-fa-city") Město/obec
+                                    input(type="text" id="register-fa-city" name="register-fa-city")
+                                .form-group     
+                                    label(for="register-fa-psc") PSČ
+                                    input(type="text" id="register-fa-psc" name="register-fa-psc")
+                                .form-group     
+                                    label(for="register-fa-state") Stát
+                                    select(name="register-fa-state" id="register-fa-state")   
+                                        option(value="cz") Česká republika
+                                        option(value="sk") Slovensko
+
+
+
+                        .form-spacer 
+
+                        .form-group.--checkbox
+                            label(for="register-agree2") Souhlasím se #[a(href="#") zpracováním osobních údajů] za účelem registrace.
+                            input(type="checkbox" name="register-agree2" id="register-agree2" required)
+
+
+                        .form-group 
+                            button.btn.--fullWidth(name="register-submit" id="register-submit") Vytvořit účet #[img(src="img/icons/cheveron-white.svg")]
+
+
+
+
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

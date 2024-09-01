@@ -1,0 +1,21 @@
+.alert {
+    position: relative;
+    padding: 12px 20px;
+    margin-bottom: 40px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    position: fixed;
+    z-index: 999;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    max-width: 100%;
+    text-align:center;
+}
+
+.alert.--success {
+    color: #155724;
+    background-color: #d6e8d8;
+    font-weight: 500;
+}

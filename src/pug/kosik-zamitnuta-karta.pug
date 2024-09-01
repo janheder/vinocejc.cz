@@ -1,0 +1,33 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-dokonceny";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+                .page   
+                    .cart-empty
+                        .cart-empty__img 
+                            img(src="img/cart-card.svg" alt="Karta zamítnuta")
+                        h1.cart-empty__title Platba kartou nebyla úspěšná
+                        p.cart-empty__text Zkuste projít všemi kroky košíku znovu a provést platbu.
+                        a.btn.--green(href="/") Zpět do košíku
+                        .cart-empty__alert 
+                            img(src="img/icons/info.svg" alt="Informace")
+                            .cart-empty__alert-text Pokud máte problém s objednávkou, kontaktujte nás na email@email.cz nebo na telefonním čísle 111 222 333
+
+
+
+
+            include components/_contact-section.pug
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

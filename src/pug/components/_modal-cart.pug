@@ -1,0 +1,45 @@
+.modal.micromodal-slide(id="modal-cart")
+
+  .modal__overlay(tabindex="-1" data-micromodal-close)
+
+
+    .modal__container.--cart(role="dialog" aria-labelledby="modal-cart-title")
+
+        .modal__image
+            img(src="img/product-thumb-medium.jpg" alt="Dřevěná bedna na 2 vína")
+
+        .modal__content(id="modal-cart-content")
+            
+            .modal__header
+                h2.modal__title(id="modal-cart-title") Přidáno do košíku
+                button.modal__close(aria-label="Close modal" data-micromodal-close)
+                
+            p.modal__cart-title Dřevěná bedna na 2 vína CARMEN VI lorem ipsum dolor sit amet
+            span.modal__cart-variant Varianta: Černý lak + prosklená dvířka
+            span.modal__cart-variant Počet kusů: 1
+            span.modal__cart-price 1 118 Kč
+            span.modal__cart-vat od 923,97 Kč bez DPH
+
+            .modal__cart-btns
+                span.btn.--cart-dark(aria-label="Close modal" data-micromodal-close) Zpět do obchodu
+                a.btn.--cart(href="/kosik-1.html") Do košíku #[img(src="img/icons/cheveron-white.svg" alt="Pokračovat")]
+                
+
+   
+
+
+            
+            
+
+
+script.
+    document.addEventListener("DOMContentLoaded", () => {
+        MicroModal.show('modal-cart',{
+            openClass: 'is-open', 
+            disableScroll: true, 
+            disableFocus: true, 
+            awaitOpenAnimation: true,
+            awaitCloseAnimation: true, 
+            debugMode: false 
+        }); 
+    });

@@ -1,0 +1,83 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading
+                    .container
+                        h1 Kontakty
+                section.page-content
+                    .container 
+                        .row 
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Zákaznická linka
+                                    h5 Provozní doba: Po-Pá 8:00 – 14:30
+                                    a.contact-block(href="tel:777800892") +420 777 800 892
+                                    p Na tomto telefonním čísle zjistíte obecné informace o dostupnostech jednotlivých produktů, době dodání, technické specifikace a máte možnost provést telefonickou objednávku zboží. Pokud chcete zjistit stav objednávky, přichystejte si prosím číslo této objednávky pro urychlení komunikace.
+                                    h5 Mimo pracovní dobu, mailově na #[a(href="mailto:info@eshop.eline.cz") info@eshop.eline.cz]
+
+                            .col-12.col-md-2
+
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Velkoobchod
+                                    a.contact-block(href="mailto:ondera@seznam.cz") info@eshop.eline.cz
+                                    p Na této mailové adrese, Vám rádi zodpovíme možnosti velkoobchodní spolupráce
+
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Fakturační adresa
+                                    ul 
+                                        li 
+                                            strong eshop.eline s.r.o.
+                                        li Lískovecká 2782
+                                        li 73801  Frýdek-Místek
+                                        li
+                                        li IČ: 05844657
+                                        li DIČ: CZ05844657  
+                                        li
+                                        li eshop.eline s.r.o., C 69595 vedená u Krajského soudu v Ostravě                  
+
+                            .col-12.col-md-2
+
+                            .col-12.col-md-5
+                                .page-content__cell
+                                    h2 Adresa expedičního skladu
+                                    ul 
+                                        li 
+                                            strong Expediční sklad Místek - Beskydská
+                                        li Beskydská 1488 (areál Slezan)
+                                        li 73801  Frýdek-Místek
+                                    a.contact-block(href="tel:777800892") +420 777 800 892
+
+                            .col-12.col-md-12
+                                .page-content__cell
+                                    h2 Kde nás najdete  
+                                    .page-content__map
+                                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.356419116029!2d18.344653516279678!3d49.66642455142444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713f6e091cc7f4d%3A0xcd50128245eff2a6!2zQmVza3lkc2vDoSAxNDg4LCBNw61zdGVrLCA3MzggMDEgRnLDvWRlay1Nw61zdGVr!5e0!3m2!1sen!2scz!4v1623505331730!5m2!1sen!2scz" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy")
+
+                            .col-12.col-md-12
+                                .page-content__cell
+                                    h2 Informační oznámení o EET
+                                    p Podle zákona o evidenci tržeb je prodávající povinen  vystavit  kupujícímu  účtenku.  Zároveň  je povinen zaevidovat přijatou  tržbu  u správce  daně  online;  v  případě  technického  výpadku  pak  nejpozději  do 48 hodin.", eviduje-li poplatník v daném pokladním místě tržby v běžném režimu.
+
+
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

@@ -1,0 +1,76 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kontakty";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .container 
+               
+                .review-thanks
+                    img(src="img/icons/thumbsup.svg", alt="Děkujeme za vaše hodnocení")
+                    h2 Děkujeme za vaše hodnocení
+
+                .review-error
+                    img(src="img/icons/info.svg", alt="Už jste hodnotili")
+                    h2 Už jste hodnotili
+                    p Hodnocení pro tuto objednávku 123 bylo provedeno dne XX. Objednávku nelze hodnotit opakovaně.
+
+                .page.--narrow
+                    section.page-heading
+                        h1 Nové hodnocení
+                        
+                    
+                    form(method="post" id="review-form")
+                        .form-group     
+                            label(for="review-name") Jméno a Příjmení
+                            input(type="text" id="review-name" name="register-name" required minlength="2" maxlength="45")
+
+                        .form-group  
+                            .rating-box
+                                span Zvolte počet hvězdiček:
+                                .rating-container
+                                    input(type="radio" name="rating" value="5" id="star-5" required)
+                                    label(for="star-5") &#9733;
+
+                                    input(type="radio" name="rating" value="4" id="star-4" required)
+                                    label(for="star-4") &#9733;
+
+                                    input(type="radio" name="rating" value="3" id="star-3" required)
+                                    label(for="star-3") &#9733;
+
+                                    input(type="radio" name="rating" value="2" id="star-2" required)
+                                    label(for="star-2") &#9733;
+
+                                    input(type="radio" name="rating" value="1" id="star-1" required)
+                                    label(for="star-1") &#9733;                                
+
+                        .form-group     
+                            label(for="review-text") Text hodnocení
+                            textarea(id="review-text" name="review-text" rows="8" required)
+
+                        .form-spacer 
+
+                        .form-group.--checkbox
+                            label(for="review-agree") Souhlasím se #[a(href="#") zpracováním osobních údajů].
+                            input(type="checkbox" name="review-agree" id="review-agree" required)
+
+
+                        .form-group 
+                            button.btn.--fullWidth(name="review-submit" id="review-submit") Zveřejnit hodnocení #[img(src="img/icons/cheveron-white.svg")]
+                        
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

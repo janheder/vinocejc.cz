@@ -1,0 +1,47 @@
+.searchAutocomplete{    
+    background: $white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    pointer-events: none;
+}
+.searchAutocomplete.--active{    
+    opacity: 1;
+    pointer-events: auto;
+}
+.searchAutocomplete__section{
+    padding: 10px 0;
+}
+.searchAutocomplete__title{
+    font-size: 14px;
+    font-weight: 500;
+    color: $gray-500;
+    display: flex;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.searchAutocomplete__item{
+}
+.searchAutocomplete__link{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $gray-900;
+    display: flex;
+
+    &:hover, &:active, &:focus{
+        background: $gray-100;
+    }
+}
+@media screen and (max-width: 991px){
+    .searchAutocomplete {
+        left: -10px;
+        right: -10px;
+        width: auto;
+    }
+}

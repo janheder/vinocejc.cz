@@ -1,0 +1,49 @@
+.product-card 
+    a.product-card__link(href="/produkt-detail.html")
+
+        .product-card__top     
+
+            .product-card__thumb
+
+                .product-card__tags
+                    .product-card__tagSingle
+                        .tag.--sale Akce
+                    .product-card__tagSingle    
+                        .tag.--new Novinka
+                    .product-card__tagSingle 
+                        .tag.--recommended Doporučené
+                    .product-card__tagSingle 
+                        .tag.--top Top
+
+                .product-card__tagsRight
+                    .product-card__tagSingle 
+                        .tag.--circleSale -18%
+                    .product-card__tagSingle 
+                        .tag.--circle Doprodej
+                    .product-card__tagSingle 
+                        .tag.--free-delivery Doprava zdarma
+
+
+                picture.product-card__imgWrap
+
+                    img.lazyload.product-card__img(src="img/load-symbol.svg" data-src="img/product-thumb-medium.jpg" alt=ProductName title=ProductName height="240" width="240" )
+
+            .product-card__title #{ProductName}
+
+
+
+
+
+        .product-card__bottom
+            .product-card__description Originální krabička na víno a cukrovinky ze dřeva, ideální pro decoupage.
+            .product-card__delivery
+                img(src="img/icons/cross.svg" alt="Není skladem")
+                .product-card__deliveryText.--unavailable Není skladem
+                
+
+            .product-card__price
+                .product-card__priceOld od 999 Kč
+                .product-card__priceMain od 899 Kč
+
+            .btn.product-card__btn Detail produktu
+            

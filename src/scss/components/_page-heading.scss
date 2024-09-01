@@ -1,0 +1,64 @@
+.page-heading{
+    padding: 60px 0;
+}
+.page-heading.--inline .container{
+    display: flex;
+    align-items: center;
+}
+.page-heading h1{
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+}
+.page-heading p{
+    color: $gray-500;
+    font-size: 15px;
+    margin: 0;
+    padding-top: 10px;
+}
+.page-heading p span{
+    display: block;
+    color: $gray-900;
+}
+.page-heading .read-more{
+    color: $green-500;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    &.--less{
+        display: flex;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+#pageDescriptionFull{
+    display: none;
+    padding-top: 20px;
+}
+#pageDescription{
+    padding-top: 20px;
+}
+#pageDescription.--active{
+    display: none;
+}
+#pageDescription.--active + #pageDescriptionFull{
+    display: block;
+}
+
+@media screen and (max-width: 575px){
+    .page-heading{
+        padding: 40px 0;
+    }
+    .page-heading h1 {
+        padding-bottom: 0px;
+        font-size: 30px;
+    }
+    .page-heading p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    #pageDescription{
+        display: none;
+    }
+}

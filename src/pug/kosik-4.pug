@@ -1,0 +1,179 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "kosik-4";
+    include template/_head.pug  
+    body.cart
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        main   
+
+            section.cart-heading
+                .container
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/cart-big.svg" alt="1. Nákupní košík")
+                        .cart-heading__title 1. Nákupní košík
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/car.svg" alt="2. Doprava a platba")
+                        .cart-heading__title 2. Doprava a platba
+                    .cart-heading__item.--complete
+                        .cart-heading__icon
+                            img(src="img/icons/personal-data.svg" alt="3. Osobní údaje")
+                        .cart-heading__title 3. Osobní údaje
+                    .cart-heading__item.--active
+                        .cart-heading__icon
+                            img(src="img/icons/summary.svg" alt="4. Shrnutí objednávky")
+                        .cart-heading__title 4. Shrnutí objednávky
+
+
+            .container 
+                .page.--narrow
+                    
+                    section.page-heading
+                        h1 Souhrn objednávky
+
+                    .cart-summary
+                        form.cart-summary__form(method="post" id="cart-form")
+                            .cart-summary__item 
+                                img.cart-summary__img(src="img/product-thumb-small.jpg" alt="Dřevěná bedna na 2 vína")
+                                .cart-summary__item-content
+                                    .cart-summary__item-title Dřevěná bedna na 2 vína CARMEN VI #[span Zelená barva s neprůhlednými dvířky]
+                                    .cart-summary__item-qty 2 ks
+                                    .cart-summary__item-price 2 236 Kč
+
+                            .cart-summary__item 
+                                img.cart-summary__img(src="img/product-thumb-small.jpg" alt="Dřevěná bedna na 2 vína")
+                                .cart-summary__item-content
+                                    .cart-summary__item-title Dřevěná bedna na 2 vína CARMEN VI #[span Zelená barva s neprůhlednými dvířky]
+                                    .cart-summary__item-qty 2 ks
+                                    .cart-summary__item-price 2 236 Kč
+
+                            .cart-summary__item 
+                                img.cart-summary__img(src="img/product-thumb-small.jpg" alt="Dřevěná bedna na 2 vína")
+                                .cart-summary__item-content
+                                    .cart-summary__item-title Dřevěná bedna na 2 vína CARMEN VI #[span Zelená barva s neprůhlednými dvířky]
+                                    .cart-summary__item-qty 2 ks
+                                    .cart-summary__item-price 2 236 Kč
+
+                            table.cart-summary__price 
+                                tbody 
+                                    tr 
+                                        td Cena zboží
+                                        td 3 299 Kč
+                                    tr 
+                                        td Česká pošta Balík do ruky
+                                        td 99 Kč
+                                    tr 
+                                        td Online kartou - GoPay
+                                        td 0 Kč
+
+
+                            table.cart-summary__price-sum
+                                tbody 
+                                    tr 
+                                        td Celková cena objednávky
+                                        td 3 354 Kč
+
+                            table.cart-summary__table
+                                thead 
+                                    tr 
+                                        th Osobní údaje
+                                        th
+                                tbody 
+
+                                    tr  
+                                        td Jméno
+                                        td test
+                                    tr  
+                                        td Příjmení
+                                        td test
+                                    tr  
+                                        td Telefon
+                                        td 123 456 789
+                                    tr  
+                                        td E-mail
+                                        td test@test.cz
+
+                            table.cart-summary__table
+                                thead 
+                                    tr
+                                        th Dodací adresa
+                                        th
+                                tbody 
+                                    
+                                    tr  
+                                        td Jméno
+                                        td test
+                                    tr  
+                                        td Příjmení
+                                        td test
+                                    tr  
+                                        td Ulice, č. p.
+                                        td test 123
+                                    tr  
+                                        td Město
+                                        td test
+                                    tr  
+                                        td PSČ
+                                        td 190 00
+
+
+                            table.cart-summary__table
+                                thead 
+                                    tr
+                                        th Fakturační adresa
+                                        th
+                                tbody 
+                                    
+                                    tr  
+                                        td Název firmy
+                                        td test
+                                    tr  
+                                        td IČO
+                                        td test
+                                    tr  
+                                        td DIČ
+                                        td test
+                                    tr  
+                                        td Ulice, č. p.
+                                        td test 123
+                                    tr  
+                                        td Město
+                                        td test
+                                    tr  
+                                        td PSČ
+                                        td 190 00
+
+                                        
+                            .form-group     
+                                label(for="order-text") Poznámka k objednávce
+                                textarea(type="text" id="order-text" name="order-text" rows="4" required)
+
+
+                            .form-group.--checkbox
+                                label(for="order-agree1") Nesouhlasím se zasláním dotazníku spokojenosti v rámci programu Ověřeno zákazníky, který pomáhá zlepšovat vaše služby.  
+                                input(type="checkbox" name="order-agree1" id="order-agree1")
+
+                            .form-group.--checkbox
+                                label(for="order-agree2") Souhlasím s #[a(href="#") obchodními podmínkami]
+                                input(type="checkbox" name="order-agree2" id="order-agree2")
+
+                            button.btn.--cart(name="finish-order") Odeslat objednávku
+
+                            .cart-table__footer
+                                a.cart-table__footer-link(href="/") 
+                                    .cart-table__footer-icon
+                                        img(src="img/icons/cheveron.svg" alt="Krok zpět")
+                                    .cart-table__footer-text Krok zpět
+
+
+
+            include components/_contact-section.pug
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

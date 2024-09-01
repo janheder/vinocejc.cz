@@ -1,0 +1,72 @@
+.btn{
+    color: $white;
+    font-size: 15px;
+    min-height: 52px;
+    height: 100%;
+    padding: 0rem 30px;
+    background: $gray-900;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    white-space: normal;
+    transition: 0.2s ease background;
+
+    &:hover, &:active, &:focus{
+        color: $white;
+        box-shadow: none;
+        background: $black;
+    }
+}
+.btn img{
+    margin-left: 15px;
+    width: 6px;
+    height: 10px;
+}
+
+.btn.--fullWidth{
+    width: 100%;
+}
+
+.btn.--green{
+    background: $red-500;
+
+    &:hover, &:active, &:focus{
+        background: $black;
+    }
+}
+.btn.--green img{
+    margin-left: 0px;
+    margin-right: 15px;
+    width: 18px;
+    height: 20px;
+}
+
+.btn.--cart{
+    background: $red-500;
+    width: 100%;
+    height: 62px;
+
+    &:hover, &:active, &:focus{
+        background: $black;
+
+        img{
+            margin-left: 20px;
+        }
+    }
+}
+.btn.--cart img{
+    margin-left: 15px;
+    transition: 0.2s ease margin;
+}
+.btn.--cart-dark{
+    /*background: transparent;
+    color: $gray-900;
+    border: 1px solid $gray-300;*/
+    width: 100%;
+    height: 62px;
+}

@@ -1,0 +1,202 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "uzivatelsky-ucet";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            .page
+                section.page-heading.--inline
+                    .container
+                        h1 Přihlášen jako: Petr Novák
+                        .logout-wrap 
+                            a.btn(href="#") Odhlásit se
+                section.page-content
+                    .container 
+                        .row 
+                            .col-12.col-lg-4
+
+
+                                h2 Úprava osobních údajů
+ 
+                                form(method="post" id="register-form")
+                                    .form-group     
+                                        label(for="register-name") Jméno
+                                        input(type="text" id="register-name" name="register-name" required minlength="2" maxlength="45" value="Petr")
+                                    .form-group     
+                                        label(for="register-surname") Příjmení
+                                        input(type="text" id="register-surname" name="register-surname" required minlength="2" maxlength="45")
+                                    .form-group     
+                                        label(for="register-email") Email
+                                        | <input type="email" id="register-email" name="register-email" required minlength="6" maxlength="255" pattern="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+                                    .form-group     
+                                        label(for="register-tel") Telefon 
+                                        | <input type="tel" id="register-tel" name="register-tel" required pattern="\d{1,15}">
+                                    .form-group     
+                                        label(for="register-password") Heslo
+                                        input(type="password" id="register-password" name="register-password")
+                                        span.show-password(id="showRegisterPassword" aria-label="Zobrazit heslo")
+
+
+                                    .form-subtitle Dodací údaje
+
+                                    .form-group     
+                                        label(for="register-street") Ulice
+                                        input(type="text" id="register-street" name="register-street" required maxlength="50")
+                                    .form-group     
+                                        label(for="register-street-n") Číslo popisné
+                                        input(type="text" id="register-street-n" name="register-street-n" required maxlength="50")
+                                    .form-group     
+                                        label(for="register-city") Město/obec
+                                        input(type="text" id="register-city" name="register-city" required maxlength="50")      
+                                    .form-group     
+                                        label(for="register-psc") PSČ
+                                        input(type="text" id="register-psc" name="register-psc" required maxlength="50")      
+                                    .form-group     
+                                        label(for="register-state") Stát
+                                        select(name="register-state" id="register-state" required)   
+                                            option(value="cz") Česká republika
+                                            option(value="sk") Slovensko
+
+                                    .form-spacer 
+
+                                    .form-group.--checkbox
+                                        label(for="register-fa-address" id="faToggle") Vyplnit fakturační adresu
+                                        input(type="checkbox" name="register-fa-address" id="register-fa-address")
+
+                                        .form-collapse
+
+                                            .form-group     
+                                                label(for="register-fa-company") Název firmy
+                                                input(type="text" id="register-fa-company" name="register-fa-company" )
+                                            .form-group     
+                                                label(for="register-fa-ico") IČO
+                                                input(type="text" id="register-fa-ico" name="register-fa-ico" )
+                                            .form-group     
+                                                label(for="register-fa-dic") DIČ (nepovinné)
+                                                input(type="text" id="register-fa-dic" name="register-fa-dic")
+                                            .form-group     
+                                                label(for="register-fa-street") Ulice
+                                                input(type="text" id="register-fa-street" name="register-fa-street" )
+                                            .form-group     
+                                                label(for="register-fa-street") Číslo popisné
+                                                input(type="text" id="register-fa-street-n" name="register-fa-street-n" )
+                                            .form-group     
+                                                label(for="register-fa-city") Město/obec
+                                                input(type="text" id="register-fa-city" name="register-fa-city" )
+                                            .form-group     
+                                                label(for="register-fa-psc") PSČ
+                                                input(type="text" id="register-fa-psc" name="register-fa-psc" )
+                                            .form-group     
+                                                label(for="register-fa-state") Stát
+                                                select(name="register-fa-state" id="register-fa-state" )   
+                                                    option(value="cz") Česká republika
+                                                    option(value="sk") Slovensko
+
+
+
+                                    .form-spacer 
+
+                                    .form-group 
+                                        button.btn.--fullWidth(name="register-submit" id="register-submit") Aktualizovat údaje #[img(src="img/icons/cheveron-white.svg")]
+
+                                .delete-account
+                                    h2 Smazat účet
+                
+                                    button.btn.--fullWidth(data-micromodal-trigger="modal-delete") Smazat účet
+
+                                    .modal.micromodal-slide(id="modal-delete")
+
+                                        .modal__overlay(tabindex="-1" data-micromodal-close)
+
+
+                                            .modal__container(role="dialog" aria-labelledby="modal-delete-title")
+
+                                                .modal__content(id="modal-delete-content")
+
+                                                    .modal__header
+
+                                                        h2.modal__title(id="modal-delete-title") Opravdu si přejete smazat svůj účet?
+
+                                                        button.modal__close(aria-label="Close modal" data-micromodal-close)
+
+
+                                                    form(method="") 
+                                                        button.btn.--fullWidth(data-micromodal-trigger="modal-delete") Smazat účet
+
+
+
+
+
+                            .col-12.col-lg-1
+                            .col-12.col-lg-7
+                                h2 Historie objednávek
+
+                                .order-history 
+                                    table
+                                        thead 
+                                            th Číslo nákupu
+                                            th Datum 
+                                            th Cena 
+                                            th(colspan="2") Stav objednávky
+
+                                
+                                        tbody
+                                            tr.order-history__item(id="detail-1") 
+                                                td 1598879
+                                                td 1. 1. 1970
+                                                td 16 999 Kč
+                                                td.--finished Dokončeno
+                                                td #[a(href="#detail-1") Detail]
+
+                                                
+                                            tr.order-history__item-detail
+                                                td(colspan="2") 
+                                                    span Dřevěná bedna na 2 vína CARMEN VI lorem ipsum
+                                                    span Dřevěná bedna na 2 vína
+                                                td 
+                                                    span 1 ks
+                                                    span 2 ks
+                                                td
+                                                    span Skladem
+                                                    span Skladem
+                                                td 
+                                                    span 5 999 Kč
+                                                    span 2 299 Kč
+
+                        
+
+
+
+                                
+                                            tr.order-history__item(id="detail-2") 
+                                                td 1598879
+                                                td 1. 1. 1970
+                                                td 16 999 Kč
+                                                td.--finished Dokončeno
+                                                td #[a(href="#detail-2") Detail]
+
+                                                
+                                            tr.order-history__item-detail
+                                                td(colspan="2") Dřevěná bedna na 2 vína CARMEN VI lorem ipsum
+                                                td 1 ks
+                                                td Skladem
+                                                td 5 999 Kč
+
+
+
+
+            include components/_points-section.pug
+            include components/_contact-section.pug
+            include components/_social-section.pug
+
+
+        
+        include components/_footer.pug
+
+        include template/_scripts.pug  

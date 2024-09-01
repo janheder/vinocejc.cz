@@ -1,0 +1,39 @@
+.modal.micromodal-slide(id="modal-login")
+
+  .modal__overlay(tabindex="-1" data-micromodal-close)
+
+
+    .modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-login-title")
+
+        .modal__content(id="modal-login-content")
+
+            .modal__header
+                h2.modal__title(id="modal-login-title") Přihlášení
+
+                button.modal__close(aria-label="Close modal" data-micromodal-close)
+
+
+            
+            form(method="post" id="login-form")
+                .form-group 
+                    label(for="login-email") Email
+                    input(type="email" id="login-email" name="login-email" required)
+                .form-group 
+                    label(for="login-password") Heslo
+                    input(type="password" id="login-password" name="login-password" required)
+                    span.show-password(id="showLoginPassword" aria-label="Zobrazit heslo")
+
+                a.forgot-password(href="/zapomenute-heslo.html") Zapomenuté heslo?
+
+                .form-group 
+                    button.btn.--fullWidth(name="login-submit" id="login-submit") Přihlásit #[img(src="img/icons/cheveron-white.svg" alt="Přihlásit")]
+
+                span.register Nemáte u nás účet? #[a(href="/registrace.html") Zaregistrujte se]
+                
+        .modal__side(id="modal-login-side")
+            picture
+                source(data-srcset="img/login-modal.avif" type="image/avif")
+                source(data-srcset="img/login-modal.webp" type="image/webp")
+                img.lazyload(src="img/load-symbol.svg" data-src="img/login-modal.jpg" width="288" height="544")
+
+

@@ -1,0 +1,185 @@
+doctype html
+include template/_variables.pug  
+html(lang=lang)
+    - var slug = "produkt-detail";
+    include template/_head.pug  
+    body
+        include components/_modal-login.pug
+        include components/_modal-cart.pug
+
+
+        include components/_header.pug
+        include components/_nav.pug
+        main
+            include components/_breadcrumbs.pug
+            section.product-detail
+                .container
+                    .row
+                        .col-12.col-lg-7
+                            .product-detail__photos
+
+                                .product-card__tags
+                                    .product-card__tagSingle
+                                        .tag.--sale Akce
+                                    .product-card__tagSingle    
+                                        .tag.--new Novinka
+                                    .product-card__tagSingle 
+                                        .tag.--recommended Doporučené
+                                    .product-card__tagSingle 
+                                        .tag.--top Top
+
+                                .product-card__tagsRight
+                                    .product-card__tagSingle 
+                                        .tag.--circleSale -18%
+                                    .product-card__tagSingle 
+                                        .tag.--circle Doprodej
+                                    .product-card__tagSingle 
+                                        .tag.--free-delivery Doprava zdarma
+
+
+                                .product-detail__carousel(id="product-carousel")
+                                    .product-detail__carouselItem
+                                        .product-detail__carouselLink
+                                            img(src="img/product-thumb-large.jpg" alt="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" title="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" loading="lazy")
+                                            span Lorem ipsum
+                                    .product-detail__carouselItem
+                                        .product-detail__carouselLink
+                                            img(src="img/product-thumb-large.jpg" alt="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" title="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" loading="lazy")
+                                            span Lorem ipsum
+                                    .product-detail__carouselItem
+                                        .product-detail__carouselLink
+                                            img(src="img/product-thumb-large.jpg" alt="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" title="Dřevěná bedna na 2 vína CARMEN VI lorem ipsum" loading="lazy")
+                                            span Lorem ipsum
+
+                                button.prev(aria-label="Zpět")
+                                    img(src="img/icons/cheveron.svg" alt="Zpět")
+                                button.next(aria-label="Vpřed")
+                                    img(src="img/icons/cheveron.svg" alt="Vpřed")
+
+                                .lightbox(id="lightbox")
+
+                                .product-detail__thumbs 
+
+                                    .product-detail__thumbWrap
+                                        .product-detail__thumb(id="thumb0")
+                                            .product-detail__thumbInner
+                                                img.lazyload(src="img/load-symbol.svg" data-src="img/product-thumb-medium.jpg" alt="thumb1")
+
+                                    .product-detail__thumbWrap
+                                        .product-detail__thumb(id="thumb1")
+                                            .product-detail__thumbInner
+                                                img.lazyload(src="img/load-symbol.svg" data-src="img/product-thumb-medium.jpg" alt="thumb2")
+
+                                    .product-detail__thumbWrap    
+                                        .product-detail__thumb(id="thumb2")
+                                            .product-detail__thumbInner
+                                                img.lazyload(src="img/load-symbol.svg" data-src="img/product-thumb-medium.jpg" alt="thumb3")
+
+
+
+                        .col-12.col-lg-5
+                            .product-detail__info
+                                h1.product-detail__title #{ProductName}
+                                .product-detail__code
+                                    div Kód produktu: #[span(id="product-code") Zvolte variantu]
+                                    a(href="https://www.facebook.com/sharer/sharer.php?u=eshop.eline.pages.dev/produkt-detail" target="_blank") #[img(src="img/icons/share.svg" alt="Sdílet")] Sdílet
+                                    
+                                p.product-detail__text Nabízíme náš dřevěný CARMEN VI BOX / KONTEJNER - přírodní, ekologický kontejner. Výsuvný box na dvě vína z přírodního dřeva s rukojetí - rukojetí z přírodního... #[a(href="#productDescription") Číst více]
+                                form.product-detail__form(method="post")
+                                    .variants(id="variants")
+                                        .variants__title Výběr varianty
+          
+                                        .variants__list-wrap
+                                            .variants__list
+
+                                                .variants__item.default.--active(data-code="Zvolte variantu" data-stockstatus="default" data-stock="Zvolte variantu" data-priceold="od 1 500 Kč" data-price="od 1 200 Kč" data-pricevat="od 923 Kč") 
+                                                    input(type="radio" name="variant-empty" id="variantId" value="123" aria-label="Zvolte variantu" required)
+                                                    .variants__item-text Zvolte variantu
+
+                                                .variants__item(data-code="1" data-stockstatus="active" data-stock="Skladem 10ks" data-priceold="1 500 Kč" data-price="1 200 Kč" data-pricevat="923 Kč") 
+                                                    input(type="radio" name="variant" id="variantId1" value="123" aria-label="Černý lak + prosklená dvířka" required)
+                                                    img(src="img/logo.svg" alt="Černý lak + prosklená dvířka" data-src="img/product-thumb-large.jpg")
+                                                    .variants__item-text Černý lak + prosklená dvířka
+
+                                                .variants__item(data-code="2" data-stockstatus="disabled" data-stock="Nedostupné" data-priceold="150 Kč" data-price="100 Kč" data-pricevat="80 Kč") 
+                                                    input(type="radio" name="variant" id="variantId2" value="123" aria-label="Zelená barva s neprůhlednými dvířky" required)
+                                                    img(src="img/product-thumb-small.jpg" alt="Zelená barva s neprůhlednými dvířky" data-src="img/product-thumb-large.jpg")
+                                                    .variants__item-text Zelená barva s neprůhlednými dvířky
+
+
+                                                .variants__item(data-code="3" data-stockstatus="disabled" data-stock="Nedostupné" data-price="1000 Kč" data-pricevat="800 Kč") 
+                                                    input(type="radio" name="variant" id="variantId3" value="123" aria-label="Zelená barva" required)
+                                                    img(src="img/product-thumb-small.jpg" alt="Zelená barva" data-src="img/product-thumb-large.jpg")
+                                                    .variants__item-text Zelená barva
+
+
+                                    .product-detail__stock(id="stock" data-status="default") Pro dostupnost zvolte variantu    
+
+                                    .product-detail__price 
+                                        .product-detail__priceMain #[span(id="price-old") od 1 200 Kč] #[span(id="price-main") od 1 118 Kč]
+                                        .product-detail__priceVAT #[span(id="price-vat") od 923,97 Kč] bez DPH
+
+                                    .product-detail__cta 
+
+                                        .product-detail__cta-wrap
+                                            .product-detail__qty.stepper(id="qty-stepper" ) 
+                                                span.minus –
+                                                input(id="qty-stepper-input" type="number" value="1" min="1" max="100" step="1" aria-label="Počet položek" required) 
+                                                span.plus +
+                                            .product-detail__button 
+                                                button.btn.--green(name="add-to-cart") #[img(src="img/icons/cart-white.svg" alt="Vložit do košíku")] Vložit do košíku
+
+
+                        .col-12.col-lg-7
+                            .product-detail__description(id="productDescription")
+                                h2 Popis produktu
+                                p Nabízíme náš dřevěný CARMEN VI BOX / KONTEJNER - přírodní, ekologický kontejner. Výsuvný box na dvě vína z přírodního dřeva s rukojetí - rukojetí z přírodního tlustého lana, která je praktická a snadno přepravitelná.
+
+                                p Přírodní odstín. Perfektní předmět pro jedinečný dárek, zajímavý dekorativní motiv - vnese do vašeho domova přirozený ekologický nádech.
+
+                                p Na přání je možné dokoupit dřevěnou vlnu (hobliny) a rytinu.
+
+                        .col-12.col-lg-1
+
+                        .col-12.col-lg-4
+                            .product-detail__parameters
+                                h2 Parametry
+                                table  
+                                    tbody 
+                                        tr
+                                            td Šířka
+                                            td 15cm
+                                        tr
+                                            td Výška
+                                            td 150cm
+                                        tr
+                                            td Hloubka
+                                            td Lorem ipsum dolore
+
+
+
+            include components/_points-section.pug
+            section.products
+                .container  
+                    h1 Příslušenství
+                    .products-grid
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+            section.products
+                .container  
+                    h1 Související
+                    .products-grid
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+                        include components/_product-card.pug
+
+            include components/_contact-section.pug
+
+            include components/_social-section.pug
+
+        include components/_footer.pug
+
+        include template/_scripts.pug  
