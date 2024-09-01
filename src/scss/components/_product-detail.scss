@@ -250,9 +250,8 @@
 }
 .product-detail__cta{
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: $gray-100;
+    flex-direction: row;
+    gap: 10px;
 }
 .product-detail__qty.stepper{
     height: 62px;   
@@ -269,7 +268,6 @@
     display: flex;
 }
 .product-detail__button{
-    margin-left: 10px;
     z-index: 0;
 }
 .product-detail__button button{
