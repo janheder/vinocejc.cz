@@ -17,7 +17,6 @@ echo '<section class="contact">
                 <div class="contact__text">'.__TELEFON__.' <small>PO - PÁ 8:00 – 14:30</small></div>
               </div>
             </div>
-            <div class="contact__img"><img src="/img/contact-img.png" alt="" height="310" width="320"></div>
           </div>
         </div>
       </section>
