@@ -1,6 +1,10 @@
 .product-detail{
     padding: 60px 0;
 }
+.product-detail__top{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
 .product-detail__photos{
     margin-right: 60px;
     position: relative;

@@ -1072,8 +1072,8 @@ public $typ_ceny; // typ ceny (A,B,C,D)
 				
 				 $ret .= '<section class="product-detail">
 			        <div class="container">
-			          <div class="row">
-			            <div class="col-12 col-lg-7">
+			      
+					<div class="product-detail__top">
 			              <div class="product-detail__photos">
 			                <div class="product-card__tags">';
 			                
@@ -1187,8 +1187,7 @@ public $typ_ceny; // typ ceny (A,B,C,D)
 			                
 			                 $ret .= '</div>
 			              </div>
-			            </div>
-			            <div class="col-12 col-lg-5">
+
 			              <div class="product-detail__info">
 			                <h1 class="product-detail__title">'.$data_p['nazev'].'</h1>';
 			                
@@ -1514,6 +1513,7 @@ public $typ_ceny; // typ ceny (A,B,C,D)
 			                
 			              </div>
 			            </div>
+						<div class="row">
 			            <div class="col-12 col-lg-7">
 			              <div class="product-detail__description" id="productDescription">
 			                <h2>Popis produktu</h2>
