@@ -68,6 +68,7 @@ header{
 
 }
 .logo img{
+    width: 100%;
     height: 32px;
 }
 #navToggle{
@@ -129,6 +130,8 @@ header{
     max-width: 480px;
     min-width: auto;
     width: 100%;
+    border: 1px solid $gray-300;
+    border-radius: $border-radius-main;
 }
 .search-form{
     display: flex;
