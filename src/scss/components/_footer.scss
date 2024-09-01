@@ -13,12 +13,12 @@ footer{
     text-transform: uppercase;
 }
 .footer__link{
-    color: $gray-900;
+    color: $white;
     line-height: 2;
     display: flex;
 }
 .footer__text{
-    color: $gray-900;
+    color: $white;
     line-height: 2;
     display: flex;
     margin: 0;
@@ -27,7 +27,7 @@ footer{
     padding-bottom: 0;
 }
 .copyright a{
-    color: $gray-900;
+    color: $white;
 }
 .copyright__wrap{
     display: flex;

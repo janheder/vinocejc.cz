@@ -22,47 +22,10 @@ echo '<section class="contact">
         </div>
       </section>
       	
-       <section class="social">
-        <div class="container">
-          <h1>Z našeho Instagramu</h1>
-          <div class="instagram-wrap">
-            <div class="row">';
-            
-            // fotky z fotogalerie
-             $data_f = Db::queryAll('SELECT * FROM fotogalerie_fotky WHERE id_fotogalerie=1 ORDER BY razeni ASC ', array(1,7));
-			 if($data_f)
-			   {
-				   
-				   foreach($data_f as $row_f)
-				   { 
-					   echo '<div class="col-4 col-md-2"><a class="instagram-single" href="https://www.instagram.com/"><img class="lazyload" src="/img/load-symbol.svg" 
-					   data-src="/fotky/galerie/male/'.$row_f['foto'].'" alt="'.$row_f['nazev'].'" ></a></div>';
-				   }
-			   }
 
- 
-              
-            echo '</div>
-          </div>
-          <div class="row"> 
-            <div class="col-12 col-md-4">
-              <div class="social-single"><a class="social-single__link" href="https://facebook.com/">
-                  <div class="social-single__img"><img class="lazyload" src="/img/load-symbol.svg" data-src="/ikony/facebook-big.svg" alt="Facebook" width="40" height="40"></div>
-                  <div class="social-single__text">Jsme také na Facebooku</div></a></div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="social-single"><a class="social-single__link" href="https://youtube.com">
-                  <div class="social-single__img"><img class="lazyload" src="/img/load-symbol.svg" data-src="/ikony/youtube-big.svg" alt="Youtube" width="40" height="40"></div>
-                  <div class="social-single__text">Sledujte nás na Youtube</div></a></div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="social-single"><a class="social-single__link" href="https://www.instagram.com">
-                  <div class="social-single__img"><img class="lazyload" src="/img/load-symbol.svg" data-src="/ikony/instagram-big.svg" alt="Instagram" width="40" height="40"></div>
-                  <div class="social-single__text">Sledujte nás na Instagramu</div></a></div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+      
     </main>
     
     
@@ -100,7 +63,7 @@ echo '<section class="contact">
       <section class="copyright">
         <div class="container">
           <div class="copyright__wrap">
-            <div class="copyright__title">Copyright © 2021 <a class="copyright__link" href="https://eline.cz">eline.cz</a></div>
+            <div class="copyright__title">Copyright © '.date("Y").' <a class="copyright__link" href="https://eline.cz">eline.cz</a></div>
             <div class="copyright__author">Vytvořeno v <a class="copyright__link" href="http://eline.cz"><img class="lazyload" src="/img/load-symbol.svg" data-src="/img/eline-logo.svg" alt="eline.cz" aria-label="eline.cz"></a></div>
           </div>
         </div>
