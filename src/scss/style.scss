@@ -415,6 +415,7 @@ section.products h1 {
 }
 
 .cart-content.--narrow .row {
+    display: flex;
     flex-direction: column;
     max-width: 840px;
     margin: 0 auto;
@@ -436,6 +437,7 @@ section.products h1 {
     padding: 0;
     background: white;
     border: 0;
+    outline: none;
 }
 
 .cart-content.--narrow .cart-aside__title {
@@ -448,3 +450,7 @@ section.products h1 {
     padding-bottom: 0;
     margin-bottom: 20px;
 }
+.cart-content.--narrow .row .cart-table{
+    outline: 0;
+    padding: 0;
+  }
