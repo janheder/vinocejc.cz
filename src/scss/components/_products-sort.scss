@@ -1,11 +1,12 @@
 .products-sort{
     display: flex;
-    border-bottom: 1px solid $gray-300;
+    background-color: $gray-100;
     margin-bottom: 20px;
     overflow: hidden;
     overflow-x: auto;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
+    border-radius: $border-radius-main;
 }
 .products-sort::-webkit-scrollbar { 
     display: none;
@@ -32,23 +33,16 @@
 .products-sort__single label{
     display: flex;
     font-weight: 500;
-    font-size: 15px;
     padding: 15px 0;
     color: $gray-500;
     cursor: pointer;
+    font-size: 14px;
 }
 .products-sort__single input:checked + label{
     color: $gray-900;
+    background: $white;
 }
-.products-sort__single input:checked + label::after{
-    content: "";
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background: $gray-900;
-}
+
 @media screen and (max-width: 991px){
 
 }
