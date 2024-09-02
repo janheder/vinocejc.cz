@@ -33,7 +33,7 @@ public $skript; // nazev stranky
 	{ 
 		$akt = '';
 		
-		$data_a = Db::queryAll('SELECT id, str, nadpis, foto, datum FROM aktuality WHERE aktivni=? AND na_uvod=? ORDER BY id DESC LIMIT 3 ', array(1,1));
+		$data_a = Db::queryAll('SELECT id, str, nadpis, foto, datum FROM aktuality WHERE aktivni=? AND na_uvod=? ORDER BY id DESC LIMIT 2 ', array(1,1));
 		   if($data_a)
 		   {
 				   
@@ -49,7 +49,7 @@ public $skript; // nazev stranky
 						 $foto = 'news-thumb-medium.jpg';
 					   }
 					   
-				        $akt .= '<div class="col-12 col-sm-12 col-md-4"><a class="news-single" href="/aktuality/'.$row_a['str'].'-'.$row_a['id'].'">
+				        $akt .= '<div class="col-12 col-sm-12 col-md-6"><a class="news-single" href="/aktuality/'.$row_a['str'].'-'.$row_a['id'].'">
                 <div class="news-single__top">
                   <div class="news-single__dateWrap"><span class="news-single__date">'.date('d.m.Y',$row_a['datum']).'</span></div><img class="lazyload news-single__img" src="/img/load-symbol.svg" data-src="/fotky/aktuality/male/'.$foto.'" alt="'.$row_a['nadpis'].'" title="'.$row_a['nadpis'].'">
                 </div>

@@ -299,13 +299,19 @@ body.--user-active .header-nav .user__dropdown{
 .header-nav .cart-title{
     font-size: 15px;
 }
+.header-nav .cart.--active{
+    border: 0;
+    background-color: $red-500;
+}
 .header-nav .cart.--active .cart-title{
     font-size: 14px;
     line-height: 1;
+    display:none;
 }
 .header-nav .cart-price{
     font-size: 15px;
     font-weight: 500;
+    color: $white;
 }
 
 @media screen and (max-width: 991px){
