@@ -10,12 +10,17 @@ echo '<section class="contact">
           <div class="contact__content">
             <h1 class="contact__title">Máte dotazy nebo potřebujete poradit s výběrem?</h1>
             <div class="contact__wrap"> 
-              <div class="contact__item"> <img src="/ikony/envelope.svg" alt="'.__FORM_EMAIL__.'" width="25" height="20">
-                <div class="contact__text">'.__FORM_EMAIL__.'</div>
-              </div>
-              <div class="contact__item"> <img src="/ikony/phone-big.svg" alt="'.__TELEFON__.'" width="24" height="24">
+
+              <div class="contact__item"> 
+              <div class="contact__icon"><img src="/ikony/phone-big.svg" alt="'.__TELEFON__.'" ></div>
                 <div class="contact__text">'.__TELEFON__.' <small>PO - PÁ 8:00 – 14:30</small></div>
               </div>
+
+              <div class="contact__item"> 
+              <div class="contact__icon"><img src="/ikony/envelope.svg" alt="'.__FORM_EMAIL__.'" ></div>
+                <div class="contact__text">'.__FORM_EMAIL__.'</div>
+              </div>
+
             </div>
           </div>
         </div>
