@@ -2,9 +2,10 @@
     position: relative;
 }
 .filter__button{
-    background: $red-500;
-    color: $white;
-    text-transform: uppercase;
+    background: $white;
+    color: $red-500;
+    border: 1px solid $red-500;
+    border-radius: $border-radius-main;
     font-size: 14px;
     font-weight: 500;
     height: 40px;
