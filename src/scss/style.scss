@@ -112,7 +112,7 @@ section {
 }
 
 section h1 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     padding-bottom: 40px;
     margin: 0;
@@ -490,7 +490,14 @@ section.products h1 {
     color: $gray-500;
   }
 
-  section.categories{
+  @media screen and (max-width: 991px) {
+    .header-contact{
+        display:none;
+      }
+}
+
+
+section.categories{
     display: none;
   }
 
