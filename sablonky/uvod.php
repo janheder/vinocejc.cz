@@ -55,6 +55,8 @@
       <div class="header-main"> 
         <div class="container"> 
           <div id="navToggle"><span></span></div><a class="logo" href="/"><img src="/img/logo.svg" alt="<?php echo __TITLE_LOGA__;?>" title="<?php echo __TITLE_LOGA__;?>" width="150" height="40"></a>
+
+          <div class="header-contact"><div class="header-contact-icon"><img src="/img/icons/phone-green.svg"></div><div class="header-contact-content"><a href="tel:+420777235658">+420 777 235 658</a><small>Po - Pá 8:30 - 16:00</small></div></div>
           <div class="search"> 
             <div class="search-wrapper">    
               <form class="search-form" method="get" action="/vyhledavani"> 

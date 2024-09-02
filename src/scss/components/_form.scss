@@ -123,7 +123,7 @@ button{
 .form-group.--checkbox > input{
     position: absolute;
     left: 0px;
-    top: 15px;
+    top: 3px;
     appearance: none;
     height: 14px;
     width: 14px;
@@ -156,9 +156,9 @@ button{
 
 
 .form-subtitle{
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 15px;
     border-bottom: 1px solid $gray-300;
     font-weight: 500;

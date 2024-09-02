@@ -454,3 +454,32 @@ section.products h1 {
     outline: 0;
     padding: 0;
   }
+
+
+
+  .header-contact{
+    padding-left: 20px;
+    display: flex;
+    gap: 12px;
+  }
+  .header-contact-icon{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+        display: flex;
+    align-items:center;
+    justify-content: center;
+    background: rgba($green-500, 0.1);
+  }
+  .header-contact-content{
+      display: flex;
+    flex-direction: column;
+  }
+  .header-contact-content a{
+    font-size: 18px;
+    line-height: 1;
+    color: $gray-900;
+  }
+  .header-contact-content small{
+    font-size: 14px;
+  }
