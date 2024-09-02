@@ -493,3 +493,24 @@ section.products h1 {
   section.categories{
     display: none;
   }
+
+  .product-detail__topParameters{
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .product-detail__topParameters table{
+      width: 100%;
+    font-size: 14px;
+  }
+  .product-detail__topParameters table td{
+    padding: 8px 10px;
+  }
+  .product-detail__topParameters table tr:nth-child(odd) {
+    background-color: #f7f7f8;
+  }
+  .product-detail__topParameters table tr td:first-child{
+        color: #6e6e6e;
+  }
+  .product-detail__topParameters table tr td:last-child{
+    text-align:right;
+  }

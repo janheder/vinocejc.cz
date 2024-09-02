@@ -1220,7 +1220,34 @@ public $typ_ceny; // typ ceny (A,B,C,D)
 			                  $ret .= '<a href="https://www.facebook.com/sharer/sharer.php?u='.__URL__.$_SERVER['REQUEST_URI'].'" target="_blank"><img src="/img/icons/share.svg" alt="Sdílet"> Sdílet</a>
 			                </div>
 			                <p class="product-detail__text">'.$data_p['popis_kratky'].'... <a href="#productDescription">Číst více</a></p>
+
+
 			                <form class="product-detail__form" method="post">';
+
+
+
+							            // parametry pokud jsou
+										$data_par = Db::queryAll('SELECT * FROM produkty_tech_par WHERE id_produkt=? ORDER BY id ASC ', array($id_pr));
+										if($data_par)
+										{   
+											$ret .= '<div class="product-detail__topParameters">
+											<table> 
+											<tbody>'; 
+											
+											foreach($data_par as $row_par)
+											{
+												$ret .= '<tr>
+												<td>'.$row_par['nazev'].'</td>
+												<td>'.$row_par['hodnota'].'</td>
+												</tr> ';
+											}
+											
+											$ret .= '</tbody>
+											</table></div>';
+										}
+
+
+							
 			                
 			                if($data_var_pocet > 1 && $data_p['formular']!=1)
 			                {
@@ -1522,6 +1549,7 @@ public $typ_ceny; // typ ceny (A,B,C,D)
 			            </div>
 			            <div class="col-12 col-lg-1"></div>
 			            <div class="col-12 col-lg-4">
+
 			              <div class="product-detail__parameters">';
 			              
 			              // parametry pokud jsou
