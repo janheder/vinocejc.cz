@@ -7,6 +7,7 @@
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     border-radius: $border-radius-main;
+    padding: 3px;
 }
 .products-sort::-webkit-scrollbar { 
     display: none;
@@ -20,7 +21,6 @@
     position: relative;
     line-height: 1;
     cursor: pointer;
-    margin-right: 25px;
     flex-shrink: 0;
 }
 
@@ -33,10 +33,11 @@
 .products-sort__single label{
     display: flex;
     font-weight: 500;
-    padding: 15px 0;
+    padding: 17px 15px;
     color: $gray-500;
     cursor: pointer;
     font-size: 14px;
+    border-radius: $border-radius-main;
 }
 .products-sort__single input:checked + label{
     color: $gray-900;
