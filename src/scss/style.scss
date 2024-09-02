@@ -459,8 +459,11 @@ section.products h1 {
 
   .header-contact{
     padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid $gray-300;
     display: flex;
     gap: 12px;
+    align-items: center;
   }
   .header-contact-icon{
     height: 42px;
@@ -474,6 +477,7 @@ section.products h1 {
   .header-contact-content{
       display: flex;
     flex-direction: column;
+    gap: 4px;
   }
   .header-contact-content a{
     font-size: 18px;
@@ -482,4 +486,6 @@ section.products h1 {
   }
   .header-contact-content small{
     font-size: 14px;
+    line-height: 1;
+    color: $gray-500;
   }
