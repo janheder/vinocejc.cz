@@ -18,7 +18,11 @@ footer{
     line-height: 2;
     display: flex;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
+    &:hover{
+        color: $white;
+        text-decoration: underline;
+    }
 }
 .footer__text{
     color: $white;
@@ -51,6 +55,7 @@ footer .copyright{
     margin-top: -8px;
     width: 54px;
     height: 22px;
+    filter: invert(1) brightness(5);
 }
 
 @media screen and (max-width: 991px){

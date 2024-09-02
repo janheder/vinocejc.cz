@@ -24,6 +24,7 @@
     order: 2;
     color: $white;
     font-weight: 500;
+    width: 100%;
 }
 .contact__wrap{
     order: 3;
@@ -31,6 +32,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 60px;
+    width: 100%;
 }
 .contact__item{
     display: flex;
@@ -43,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 15px;
     border-radius: 50%;
     background-color: rgba(0,0,0,0.2);
     flex-shrink: 0;
