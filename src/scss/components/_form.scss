@@ -110,9 +110,9 @@ button{
 
 }
 .form-group.--checkbox > label{
-    padding: 10px 20px 10px 45px;
+    padding: 0px 0px 0px 25px;
     height: auto;
-    border: 1px solid $gray-300;
+    border: 0px solid $gray-300;
     display: block;
     cursor: pointer;
     span{
@@ -122,7 +122,7 @@ button{
 
 .form-group.--checkbox > input{
     position: absolute;
-    left: 20px;
+    left: 0px;
     top: 15px;
     appearance: none;
     height: 14px;

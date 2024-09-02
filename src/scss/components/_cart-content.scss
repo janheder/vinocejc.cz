@@ -356,7 +356,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
     margin-top: 0;
     padding: 0;
     margin-bottom:0;
@@ -381,7 +382,7 @@
 
 
 .cart-aside {
-    padding: 60px 30px 40px 60px;
+    padding: 60px 30px 40px 30px;
     position: sticky;
     top: 0px;
     background: $white;
