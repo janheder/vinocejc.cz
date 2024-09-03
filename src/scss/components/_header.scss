@@ -406,6 +406,7 @@ body.--user-active .header-nav .user__dropdown{
         padding: 0;
         margin: 0;
         border: 0;
+        border-radius: 0;
     }
     .header-nav .cart__icon{
         margin: 0;
@@ -414,14 +415,14 @@ body.--user-active .header-nav .user__dropdown{
         height: 100%;
         width: 52px;
         border: 0;
+
     }
     .header-nav .cart-wrap{
         display: none;
     }
     .header-nav .cart__number{ 
-        border: 1px solid $gray-900;
-        top: 25px;
-        left: 24px;
+        top: 24px;
+        left: 26px;
     }
     .header-nav .user__dropdown {
         right: -42px;
