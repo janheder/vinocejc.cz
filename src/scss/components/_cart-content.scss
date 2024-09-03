@@ -11,7 +11,7 @@
 .cart-content .row {
     display: grid;
         grid-template-columns: 6fr 3fr;
-        outline: 1px solid #e5e5e5;
+        outline: 1px solid $gray-300;
         margin: 0;
         gap: 1px;
     }
@@ -20,7 +20,7 @@
       width: 100%;
     }
     .cart-table{
-       outline: 1px solid #e5e5e5;
+       outline: 1px solid $gray-300;
       padding: 60px 50px;
     } 
 
@@ -483,12 +483,15 @@
     color: $gray-500;
 }
 
-.cart-aside__code {
+.form-group.cart-aside__code {
     margin-bottom: 40px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
+}
+.cart-aside__code input{
+    height: 48px;
 }
 .cart-aside__code span{
     display: flex;
