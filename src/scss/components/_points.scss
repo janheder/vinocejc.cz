@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    padding: 40px;
+    gap: 20px;
+    padding: 40px 20px;
     border-radius: $border-radius-main;
 }
 .points-single{
@@ -17,11 +17,11 @@
 }
 .points-single__icon {
     content-visibility: auto;
-    contain-intrinsic-size: 60px 60px;
+    contain-intrinsic-size: 52px 52px;
 }
 .points-single__icon img{
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
     object-fit: contain;
 }
 .points-single__content{
@@ -39,22 +39,25 @@
 }
 
 @media screen and (max-width: 991px){
+    .points-content{
+        flex-wrap: wrap;
+    }
     .points{
         padding-top: 0;
     }
     .points-single{
-        padding: 20px 0;
+        width: 50%;
     }
     .points-single__icon {
-        contain-intrinsic-size: 60px 60px;
+        contain-intrinsic-size: 50px 50px;
     }
     .points-single__icon img{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     } 
 }
 @media screen and (max-width:575px){
     .points-single{
-        padding: 10px 0;
+        padding: 0;
     }
 }
