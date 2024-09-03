@@ -70,21 +70,6 @@
     position: relative;
 }
 
-
-@media screen and (max-width: 1200px){
-    .contact__title{
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 1050px){
-    .contact__img {
-        bottom: 0px;
-    }
-    .contact__img img {
-        height: 240px;
-        width: auto;
-    }
-}
 @media screen and (max-width: 991px){
     .contact__content{
         padding: 30px 0px;
@@ -96,6 +81,7 @@
     .contact__title{
         font-size: 24px;
         text-align: center;
+        justify-content: center;
     }
     .contact__wrap{
         flex-grow: 1;
