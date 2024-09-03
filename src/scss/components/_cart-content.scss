@@ -483,14 +483,21 @@
 
 .cart-aside__code {
     margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
-
+.cart-aside__code span{
+    display: flex;
+    gap: 10px;
+}
 .cart-aside__code .btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 54px;
+    height: 48px;
     padding: 0 20px;
+    background-color: white;
+    border: 1px solid $gray-900;
+    color: $gray-900;
 }
 
 @media screen and (max-width: 991px) {
