@@ -255,13 +255,14 @@ body.--user-active .header-nav .user__dropdown{
     border: 1px solid $gray-300;
     border-radius: $border-radius-main;
     padding: 0 20px;
+    gap: 10px;
 }
 .header-nav .cart__icon{
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5px;
+    margin-right: 0;
     position: relative;
 }  
 .header-nav .cart__icon img{
@@ -399,6 +400,7 @@ body.--user-active .header-nav .user__dropdown{
     .header-nav .cart{
         padding: 0;
         margin: 0;
+        border: 0;
     }
     .header-nav .cart__icon{
         margin: 0;

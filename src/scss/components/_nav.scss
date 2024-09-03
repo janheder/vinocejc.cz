@@ -172,7 +172,7 @@ nav > .container{
         width: 100%;
         display: flex;
         &:hover, &:active, &:focus {
-            color: $white;
+            color: $gray-900;
         }
     }
     .nav-linkDesktop{
@@ -181,7 +181,7 @@ nav > .container{
     .nav-submenu{
         position: relative;
         flex-direction: column;
-        background: $gray-800;
+        background: $gray-100;
         padding: 10px 0;
         display: none;
     }
@@ -217,7 +217,7 @@ nav > .container{
         align-items: center;
         padding: 0 20px;
         font-weight: 400;
-        color: white;
+        color: $gray-900;
     }
     .nav-submenu__link{
         display: none;
