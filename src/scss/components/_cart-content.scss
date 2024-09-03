@@ -196,7 +196,9 @@
 .cart-table__footer-link {
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 20px;
 }
 
 .cart-table__footer-icon {
