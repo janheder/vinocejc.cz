@@ -613,3 +613,14 @@ section.categories {
     font-size: 14px;
     padding: 0 15px;
 }
+@media screen and (max-width: 991px) {
+    .nav-links-right {
+        flex-direction: column;
+        border-top: 1px solid $gray-300;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .nav-links-right .nav-link{
+        padding: 0 20px;
+    }
+}
