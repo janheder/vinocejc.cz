@@ -60,9 +60,17 @@
 }
 @media screen and (max-width:575px){
     .points-content{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .points-single{
         padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .points-single__content{
+        padding: 0;
+        padding-top: 10px;
     }
 }
