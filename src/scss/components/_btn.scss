@@ -3,7 +3,7 @@
     font-size: 15px;
     min-height: 52px;
     height: 100%;
-    padding: 0rem 30px;
+    padding: 0rem 20px;
     background: $gray-900;
     position: relative;
     border: 0;
@@ -45,6 +45,14 @@
     margin-right: 15px;
     width: 18px;
     height: 20px;
+}
+
+.btn.--red{
+    background: $red-500;
+
+    &:hover, &:active, &:focus{
+        background: $red-600;
+    }
 }
 
 .btn.--cart{
