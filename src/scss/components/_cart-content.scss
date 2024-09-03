@@ -27,8 +27,8 @@
         outline: 0px;
     }
     .cart-table{
-        outline: px solid $gray-300;
-        padding: 40px 0px;
+        outline: 0px solid $gray-300;
+        padding: 40px 0px 0 0;
     } 
 }
 
@@ -526,7 +526,7 @@
 
 @media screen and (max-width: 991px) {
     .cart-aside {
-        padding-left: 0;
+        padding: 0;
     }
 
 }
