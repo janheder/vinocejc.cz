@@ -393,7 +393,7 @@ section.products h2 {
 
 
 .cart-page .header-main {
-    background: black;
+    background: $gray-900;
     padding: 40px 0;
 }
 
@@ -430,6 +430,12 @@ section.products h2 {
     .cart-content.--narrow .row {
         max-width: 100%;
         padding: 40px 0;
+    }
+    .cart-page .header-main {
+        padding: 0;
+    }
+    .cart-page .header-main .logo-cart img{
+        height: 24px;
     }
 }
 .cart-content.--narrow h1 {
