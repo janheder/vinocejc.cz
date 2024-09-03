@@ -26,6 +26,10 @@
         grid-template-columns: 1fr;
         outline: 0px;
     }
+    .cart-table{
+        outline: px solid $gray-300;
+        padding: 40px 0px;
+    } 
 }
 
 @media screen and (max-width:575px) {
