@@ -74,3 +74,11 @@
         padding-top: 10px;
     }
 }
+@media screen and (max-width:450px){
+    .points-content{
+        background: transparent;
+        padding: 0;
+        gap: 15px;
+    }
+
+}
