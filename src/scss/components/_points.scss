@@ -40,13 +40,15 @@
 
 @media screen and (max-width: 991px){
     .points-content{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
     }
     .points{
         padding-top: 0;
     }
     .points-single{
-        width: 50%;
+        width: 100%;
     }
     .points-single__icon {
         contain-intrinsic-size: 50px 50px;
