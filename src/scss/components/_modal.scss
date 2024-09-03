@@ -313,7 +313,7 @@ animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
 
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
-will-change: transform;
+will-change: opacity;
 }
 
 
