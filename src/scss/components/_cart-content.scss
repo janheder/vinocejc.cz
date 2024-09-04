@@ -397,6 +397,13 @@
     .cart-table-shipping-text {
         padding-left: 20px;
     }
+    .cart-table-shipping-item {
+        padding: 12px 15px;
+        
+    }
+    .cart-table-shipping{
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -527,6 +534,7 @@
 @media screen and (max-width: 991px) {
     .cart-aside {
         padding: 0;
+        outline: none;
     }
 
 }
