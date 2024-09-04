@@ -324,6 +324,9 @@
 
 
 @media screen and (max-width: 991px){
+    .product-detail__top{
+        flex-direction: column;
+    }
     .product-detail__photos{
         margin: 0;
     }
