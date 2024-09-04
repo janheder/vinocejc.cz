@@ -427,6 +427,9 @@ section.products h2 {
     width: 100%
 }
 @media screen and (max-width: 991px) {
+    .header-notice {
+        font-size: 13px;
+    }
     .cart-content.--narrow .row {
         max-width: 100%;
         padding: 0px 0;
@@ -435,7 +438,7 @@ section.products h2 {
         padding: 0;
     }
     .cart-page .header-main .logo-cart img{
-        height: 24px;
+        height: 26px;
     }
 }
 .cart-content.--narrow h1 {
