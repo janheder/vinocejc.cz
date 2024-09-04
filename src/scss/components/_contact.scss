@@ -116,13 +116,16 @@
 @media screen and (max-width: 500px){
     .contact__title{
         font-size: 24px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
         text-align: center;
+    }
+    .contact__wrap{
+        justify-content: space-evenly;
     }
     .contact__content{
         padding: 30px 0px;
     }
-    .contact__wrap{
+    .contact__item{
         flex-direction: column;
         gap: 10px;
     }
