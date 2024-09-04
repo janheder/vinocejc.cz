@@ -137,7 +137,11 @@ section.products {
 section.products h2 {
     padding-bottom: 20px;
 }
-
+@media screen and (max-width: 575px) {
+    section.products {
+        padding-bottom: 40px;
+    }
+}
 
 
 

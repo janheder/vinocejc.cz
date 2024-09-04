@@ -109,7 +109,7 @@
         gap: 30px;
     }
     .contact__item{
-        padding-right: 20px;
+        padding-right: 0px;
         padding-bottom: 0;
     }
 }
@@ -124,5 +124,9 @@
     }
     .contact__wrap{
         flex-direction: column;
+        gap: 10px;
+    }
+    .contact__icon {
+        margin-right:0px;
     }
 }
