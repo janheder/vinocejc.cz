@@ -557,6 +557,12 @@ section.categories {
     position: absolute;
     top: 0;
     left: 0;
+    background: white;
+    z-index: 1;
+} 
+.homepage-about::after{
+    top: auto;
+    bottom: 0;
 }
 .homepage-about__wrap {
     display: flex;
@@ -568,6 +574,8 @@ section.categories {
     width: 40%;
     flex-shrink: 0;
     padding: 40px 0;
+    z-index: 2;
+    position: relative;
 }
 
 .homepage-about__subtitle {
