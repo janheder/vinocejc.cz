@@ -548,8 +548,16 @@ section.categories {
 .homepage-about {
     background: #F7F7F8;
     padding: 0;
+    position: relative;
 }
-
+.homepage-about::before, .homepage-about::after{
+    content: "";
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .homepage-about__wrap {
     display: flex;
     align-items: center;
