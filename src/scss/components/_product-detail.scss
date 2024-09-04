@@ -343,9 +343,16 @@
     .product-detail{
         padding-top: 0;
     }
+    .product-detail__top{
+        padding-bottom: 40px;
+    }
+    .product-detail__info{
+        padding: 0;
+        border: 0;
+    }
     .product-detail__photos{
         padding: 0;
-        margin: 0 -10px;
+        margin: 0;
         display: flex;
         flex-direction: column;
 
@@ -355,8 +362,8 @@
             order: 9;
             margin-top: 10px;
             margin-bottom: 0px;
-            left: 10px;
-            top: 10px;
+            left: 0px;
+            top: 0px;
 
             .product-card__tagSingle{
                 margin-right: 5px;
