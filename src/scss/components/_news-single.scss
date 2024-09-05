@@ -106,7 +106,7 @@
 
 
 .news-single.--full{
-    margin-bottom: 60px;
+
 
     .news-single__top{
         min-height: 340px;
@@ -115,9 +115,20 @@
         font-size: 18px;
         padding-bottom: 10px;
         margin: 0;
+        color: $gray-900;
     }
     .news-single__text{
         margin: 0;
     }
 }
 
+.blog-page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+}
+@media screen and (max-width: 575px){
+    .blog-page-grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
