@@ -47,7 +47,8 @@
 }
 body.--filter-active{
     .filter__button{
-        background: $gray-900;
+        background: $red-500;
+        color: $white;
     }
     .filter__content{
         opacity: 1;
