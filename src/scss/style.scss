@@ -575,6 +575,8 @@ section.categories {
     display: flex;
     align-items: center;
     gap: 60px;
+    z-index: 2;
+    position: relative;
 }
 
 .homepage-about__content {
