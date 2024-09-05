@@ -52,6 +52,10 @@
     margin-top: -60px;
     margin-left: 20px;
     border-radius: $border-radius-main;
+    z-index: 2;
+    position: relative;
+    width: auto;
+    max-width: 440px;
 }
 .news-single__title{
     font-size: 16px;
