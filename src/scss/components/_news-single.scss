@@ -44,11 +44,14 @@
 .news-single__date{
     font-size: 14px;
     color: $gray-500;
-    
+
 }
 .news-single__bottom{
-    padding: 20px 0 0 0;
-    background: transparent;
+    padding: 20px;
+    background: $gray-100;
+    margin-top: -60px;
+    margin-left: 20px;
+    border-radius: $border-radius-main;
 }
 .news-single__title{
     font-size: 16px;

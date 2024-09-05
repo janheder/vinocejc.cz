@@ -153,6 +153,13 @@ button{
     .form-spacer{
         height: 20px;
     }
+    input, select{
+        height: 48px;
+        padding: 0 15px;
+    }
+    .form-group label {
+        font-size: 14px;
+    }
 }
 
 
