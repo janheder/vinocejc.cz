@@ -71,7 +71,7 @@
     .news-single{
         flex-direction: row;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
         align-items: center;
         margin: 5px 0;
     } 
@@ -82,7 +82,8 @@
     }
     .news-single__bottom{
         flex-grow: 1;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 0px;
+        background: none;
     }
     .news-single__title {
         max-height: 4.5rem;
@@ -93,7 +94,7 @@
         margin-top: 15px;
     }
     .news-single__dateWrap{
-        display: none;
+
     }
 }
 @media screen and (max-width: 575px){

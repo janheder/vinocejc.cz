@@ -582,7 +582,7 @@ section.categories {
 .homepage-about__content {
     width: 40%;
     flex-shrink: 0;
-    padding: 40px 0;
+    padding: 60px 0;
     z-index: 2;
     position: relative;
 }
@@ -633,6 +633,9 @@ section.categories {
     .homepage-about__img {
         width: 100%;
         flex-shrink: 0;
+    }
+    .homepage-about::before{
+        content: none;
     }
 }
 
