@@ -373,9 +373,10 @@ body.--user-active .header-nav .user__dropdown{
         width: 100%;
         max-width: 100%;
         box-shadow: 0px 10px 8px -8px rgba(0,0,0,0.05);
-        border: 10px solid $white;
+        border: 10px solid $gray-900;
         background: $white;
         border-top: 0;
+        border-radius: 0;
 
         .search-form{
             width: 100%;

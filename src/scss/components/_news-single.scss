@@ -84,11 +84,13 @@
         flex-grow: 1;
         padding: 0 0 0 0px;
         background: none;
+        margin: 0;
     }
     .news-single__title {
         max-height: 4.5rem;
         overflow: hidden;
         height: auto;
+        font-size: 16px;
     }
     .o-sectionNews__btnWrap{
         margin-top: 15px;
