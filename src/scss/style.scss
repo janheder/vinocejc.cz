@@ -696,3 +696,12 @@ section.categories {
 .g-recaptcha {
     margin-bottom: 20px;
 }
+
+.page-content li > strong{
+    margin: 0;
+    display: inline;
+  }
+.fotogalerie-wrap img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
