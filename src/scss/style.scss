@@ -117,7 +117,8 @@ section h1 {
     margin: 0;
     color: $gray-900;
 }
-section h2{
+
+section h2 {
     font-size: 26px;
     padding-bottom: 30px;
 }
@@ -131,7 +132,8 @@ section h2{
         font-size: 24px;
         padding-bottom: 20px;
     }
-    section h2{
+
+    section h2 {
         font-size: 22px;
         padding-bottom: 20px;
     }
@@ -144,9 +146,10 @@ section.products {
 section.products h2 {
     padding-bottom: 20px;
 }
+
 @media screen and (max-width: 575px) {
     section.products {
-            padding: 30px 0;
+        padding: 30px 0;
     }
 }
 
@@ -433,25 +436,31 @@ section.products h2 {
     padding: 50px;
     border-radius: 4px;
 }
+
 .cart-content.--narrow .row .col-md-8,
 .cart-content.--narrow .row .col-md-4 {
     width: 100%
 }
+
 @media screen and (max-width: 991px) {
     .header-notice {
         font-size: 13px;
     }
+
     .cart-content.--narrow .row {
         max-width: 100%;
         padding: 0px 0;
     }
+
     .cart-page .header-main {
         padding: 0;
     }
-    .cart-page .header-main .logo-cart img{
+
+    .cart-page .header-main .logo-cart img {
         height: 26px;
     }
 }
+
 .cart-content.--narrow h1 {
     text-align: center;
     border-bottom: 1px solid $gray-300;
@@ -564,7 +573,9 @@ section.categories {
     padding: 0;
     position: relative;
 }
-.homepage-about::before, .homepage-about::after{
+
+.homepage-about::before,
+.homepage-about::after {
     content: "";
     height: 40px;
     width: 100%;
@@ -573,11 +584,13 @@ section.categories {
     left: 0;
     background: white;
     z-index: 1;
-} 
-.homepage-about::after{
+}
+
+.homepage-about::after {
     top: auto;
     bottom: 0;
 }
+
 .homepage-about__wrap {
     display: flex;
     align-items: center;
@@ -642,7 +655,8 @@ section.categories {
         width: 100%;
         flex-shrink: 0;
     }
-    .homepage-about::before{
+
+    .homepage-about::before {
         content: none;
     }
 }
@@ -697,58 +711,78 @@ section.categories {
     margin-bottom: 20px;
 }
 
-.page-content li > strong{
+.page-content li>strong {
     margin: 0;
     display: inline;
-  }
+}
+
 .fotogalerie-wrap img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
 
-.news-single{
+.news-single {
     position: relative;
-  }
-  .news-single::after{
+}
+
+.news-single::after {
     content: "Číst celý článek";
-    position:absolute;
+    position: absolute;
     right: 0;
     bottom: 0;
     color: #d31217;
     padding: 20px 10px;
-  }
+}
 
+@media screen and (max-width: 1200px) {
+    .news-single::after {
+        content: none;
+    }
+}
 
-  .home-page #ratingSection{
+@media screen and (max-width: 991px) {
+    .news-single__bottom {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+}
+
+.home-page #ratingSection {
     border: 0;
     padding: 0;
     background: #f7f7f8;
-    padding:0;
+    padding: 0;
     position: relative;
-  }
-  .home-page #ratingSection .rating-content-title h3{
+}
+
+.home-page #ratingSection .rating-content-title h3 {
     display: flex;
     flex-direction: column;
-  font-size: 30px;
+    font-size: 30px;
     width: auto;
-  }
-  .home-page #ratingSection .rating-content-title h3 span{
-      color: #d31217;
+}
+
+.home-page #ratingSection .rating-content-title h3 span {
+    color: #d31217;
     font-size: 16px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 400;
-  }
-  .home-page #ratingSection .rating-section-inner{
-      border: 0;
+}
+
+.home-page #ratingSection .rating-section-inner {
+    border: 0;
     padding: 0;
     display: flex;
     gap: 60px;
-      padding: 90px 0 200px 0;
+    padding: 90px 0 200px 0;
     position: relative;
     z-index: 1;
-  }
-  .home-page #ratingSection .vote-wrap{
+}
+
+.home-page #ratingSection .vote-wrap {
     background: white;
     padding: 40px 30px;
     display: flex;
@@ -756,58 +790,83 @@ section.categories {
     gap: 40px;
     min-height: 300px;
     justify-content: space-between;
-  }
-  .home-page #ratingSection .vote-grid{
+}
+
+.home-page #ratingSection .vote-grid {
     grid-template-columns: 1fr 1fr;
-  }
-  .home-page #ratingSection .vote-wrap .vote-header{
+}
+
+.home-page #ratingSection .vote-wrap .vote-header {
     order: 2;
-  }
-  .home-page #ratingSection .vote-content{
-     order: 1;
+}
+
+.home-page #ratingSection .vote-content {
+    order: 1;
     margin: 0;
-  
-  }
-  .home-page #ratingSection .vote-wrap:nth-child(3){
+
+}
+
+.home-page #ratingSection .vote-wrap:nth-child(3) {
     display: none;
-  }
-  .home-page #ratingSection .rating-content{
-  margin: 0;
+}
+
+.home-page #ratingSection .rating-content {
+    margin: 0;
     align-items: flex-start;
     margin-top: 20px;
-      flex-shrink: 0;
+    flex-shrink: 0;
     width: 25%;
-  }
-  .home-page #ratingSection .vote-content{
-      font-size: 15px;
+}
+
+.home-page #ratingSection .vote-content {
+    font-size: 15px;
     font-weight: 300;
-  }
-  .home-page #ratingSection .rating-content .rate-average-inner{
+}
+
+.home-page #ratingSection .rating-content .rate-average-inner {
     display: none;
-  }
-  .home-page #ratingSection .rating-content .rating-content-title{
+}
+
+.home-page #ratingSection .rating-content .rating-content-title {
     margin: 0;
-  }
-  .home-page #ratingSection .rating-content .rating-content-text{
+}
+
+.home-page #ratingSection .rating-content .rating-content-text {
     display: none;
-  }
-  .home-page #ratingSection .rating-section-inner::before {
-      content: "";
-      height: 360px;
-      width: 980px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url(https://vinocejc.eline.cz/img/rating-bg.png);
-      z-index: -1;
-  }
-  .home-page #ratingSection::after {
-      content: "";
-      height: 80px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: #fff;
-      z-index: -1;
-  }
+}
+
+.home-page #ratingSection .rating-section-inner::before {
+    content: "";
+    height: 360px;
+    width: 980px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/rating-bg.png");
+    z-index: -1;
+}
+
+.home-page #ratingSection::after {
+    content: "";
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+@media screen and (max-width: 991px) {
+    .home-page #ratingSection .rating-section-inner {
+        flex-direction: column;
+    }
+    #ratingSection .vote-grid {
+        overflow: hidden;
+    }
+    .home-page #ratingSection .vote-wrap {
+        gap: 20px;
+        min-height: auto;
+        min-width: auto;
+    }
+}
