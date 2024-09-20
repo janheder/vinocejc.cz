@@ -138,8 +138,7 @@ section h2{
 }
 
 section.products {
-    padding-bottom: 80px;
-    padding-top: 0;
+    padding: 60px 0;
 }
 
 section.products h2 {
@@ -147,7 +146,7 @@ section.products h2 {
 }
 @media screen and (max-width: 575px) {
     section.products {
-        padding-bottom: 40px;
+        
     }
 }
 
