@@ -58,6 +58,10 @@
 }
 
 .cart-heading__item.--complete {
+    .cart-heading__icon{
+        font-size: 0;
+        background-color: $green-500;
+    }
     .cart-heading__icon::after{
         content: "";
         background: url("../img/icons/check-full.svg");
@@ -66,12 +70,9 @@
         display: block;
         border: 0;
         border-radius: 50%;
-        position: absolute;
         background-size: 100%;
-        top: 0;
-        right: 0;
-        height: 48px;
-        width: 48px;
+        height: 28px;
+        width: 28px;
     }
     .cart-heading__icon img{
         opacity: 1;
