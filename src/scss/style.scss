@@ -648,7 +648,7 @@ section.categories {
 
     .homepage-about__content {
         width: 100%;
-        padding: 40px 0;
+        padding: 60px 0;
     }
 
     .homepage-about__img {
@@ -860,6 +860,7 @@ section.categories {
 @media screen and (max-width: 991px) {
     .home-page #ratingSection .rating-section-inner {
         flex-direction: column;
+        padding: 40px 0 40px 0;
     }
     #ratingSection .vote-grid {
         overflow: hidden;
