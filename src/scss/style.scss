@@ -869,4 +869,13 @@ section.categories {
         min-height: auto;
         min-width: auto;
     }
+    .home-page #ratingSection .rating-content{
+        width: 100%;
+    }
+    .home-page #ratingSection .rating-section-inner::before{
+        content: none;
+    }
+    .home-page #ratingSection::after {
+        content: none;
+    }
 }
