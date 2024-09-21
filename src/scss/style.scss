@@ -861,6 +861,7 @@ section.categories {
     .home-page #ratingSection .rating-section-inner {
         flex-direction: column;
         padding: 40px 0 40px 0;
+        gap: 30px;
     }
     #ratingSection .vote-grid {
         overflow: hidden;
