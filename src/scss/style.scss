@@ -748,7 +748,11 @@ section.categories {
         padding: 15px 20px;
     }
 }
-
+@media screen and (max-width:768px){
+    .news-single__bottom {
+        padding: 0px;
+    } 
+}
 .home-page #ratingSection {
     border: 0;
     padding: 0;
