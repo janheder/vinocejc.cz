@@ -881,7 +881,14 @@ section.categories {
         content: none;
     }
 }
-
+@media screen and (max-width: 767px) {
+    .home-page #ratingSection .vote-grid{
+        flex-direction: column;
+    }
+    .home-page #ratingSection .vote-wrap{
+        width: 100%;
+    }
+}
 
 
 .kontaktyTop {
