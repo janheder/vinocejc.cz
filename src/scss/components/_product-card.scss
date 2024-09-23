@@ -152,7 +152,8 @@
     font-size: 14px;
 
     &:hover, &:active, &:focus{
-        background: rgba($green-500,0.15);       
+        background: rgba($green-500,0.2);
+        color: $green-500;       
     }
 }
 
