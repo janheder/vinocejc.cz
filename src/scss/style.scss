@@ -990,7 +990,7 @@ h3.kontaktyTop__title {
     padding: 30px;
     margin-left: 8px;
     margin-bottom: -10%;
-    z-index: 999;
+    z-index: 2;
     position: relative;
 }
 
@@ -1004,7 +1004,20 @@ h3.kontaktyTop__title {
     width: auto;
     margin: 0;
 }
-
+@media screen and (max-width: 991px) {
+    .kontaktyTop {
+        grid-template-columns: 1fr;
+    }
+    .page-content .contact__title {
+        white-space: normal;
+    }
+    .kontaktyContact {
+        width: 100%;
+        padding: 30px;
+        margin-left: 0px;
+        margin-bottom: 0%;
+    }
+}
 
 .cart-content::after {
     content: "";
