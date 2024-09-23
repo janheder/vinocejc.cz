@@ -54,6 +54,9 @@ body.--filter-active{
         opacity: 1;
         pointer-events: auto;
     }
+    img{
+        filter: invert(1) brightness(5);
+    }
 }
 .filter__form{
     padding: 20px;
