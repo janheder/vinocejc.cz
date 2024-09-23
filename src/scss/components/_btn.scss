@@ -79,3 +79,14 @@
     width: 100%;
     height: 62px;
 }
+
+
+.btn.btn-ghost{
+    color: #d31217;
+    border: 1px solid #d31217;
+   background: transparent;
+
+   &:hover, &:active, &:focus{
+    background: white;
+   }
+ }
