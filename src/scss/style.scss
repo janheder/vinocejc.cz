@@ -493,7 +493,11 @@ section.products h2 {
 .cart-content.--narrow .row .cart-table .cart-table__footer-link {
     margin: 0;
 }
-
+@media screen and (max-width:991px) {
+    .cart-content.--narrow .row .cart-table{
+        padding-top: 40px;
+    } 
+}
 .header-contact {
     padding-left: 20px;
     margin-left: 20px;
