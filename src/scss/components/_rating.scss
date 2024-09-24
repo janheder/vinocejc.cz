@@ -71,12 +71,14 @@
 #ratingSection .vote-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px
+    grid-gap: 30px
 }
 
 #ratingSection .vote-wrap {
-    border: 0;
-    padding: 0
+    border: 1px solid $gray-300;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #ratingSection .vote-time {
@@ -84,7 +86,9 @@
 }
 
 #ratingSection .vote-header {
-    display: flex
+    order:  2;
+    margin-top: 20px;
+    display: flex;
 }
 
 #ratingSection .vote-pic {
@@ -152,6 +156,7 @@
     line-height: 1.5;
     margin-top: 15px;
     font-size: 14px;
+    margin: 0;
 }
 
 @media screen and (max-width:991px) {
