@@ -38,7 +38,7 @@
 }
 .product-card__thumb{
     position: relative;
-    padding-bottom: 85%;
+    padding-bottom: 90%;
     background-color: $gray-100;
 }
 .product-card__imgWrap{
@@ -52,6 +52,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 10px 0;
 }
 
 .product-card__img{

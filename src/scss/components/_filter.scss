@@ -54,7 +54,7 @@ body.--filter-active{
         opacity: 1;
         pointer-events: auto;
     }
-    img{
+    .filter__button img{
         filter: invert(1) brightness(5);
     }
 }
