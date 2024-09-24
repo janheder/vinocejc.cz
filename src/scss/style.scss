@@ -1214,3 +1214,14 @@ h3.kontaktyTop__title {
     left: auto;
     transform: rotate(-90deg) translate(50%, 50%);
 }
+
+.searchAutocomplete__title{
+    color: #d31217;
+  }
+  .searchAutocomplete__link{
+    font-size: 15px;
+  }
+  
+  .breadcrumbs__item.--home{
+    display: inline-flex;
+  }
