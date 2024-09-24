@@ -1186,7 +1186,13 @@ h3.kontaktyTop__title {
     padding-left: 0;
     padding-right: 0;
 }
-
+@media screen and (max-width: 450px) {
+    .points.--footer .points-content {
+        padding: 15px 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 .cart-content.--narrow .cart-aside__table .cart-aside__row:first-child {
     display: none;
 }

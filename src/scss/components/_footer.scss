@@ -61,7 +61,7 @@ footer .copyright{
 
 @media screen and (max-width: 991px){
     footer {
-        padding: 20px 0 60px 0;
+        padding: 20px 0 20px 0;
     }
     .footer__title{
         padding: 40px 0 10px 0; 
@@ -72,7 +72,7 @@ footer .copyright{
 }
 @media screen and (max-width: 575px){
     footer {
-        padding: 00px 0 40px 0;
+        padding: 00px 0 20px 0;
     }
     .footer__title{
         font-size: 16px;
@@ -87,5 +87,8 @@ footer .copyright{
         width: 50px;
         height: 20px;
         margin-top: -10px;
+    }
+    footer .copyright{
+        margin-top: 40px;
     }
 }
