@@ -1306,3 +1306,40 @@ h3.kontaktyTop__title {
     }
     
 }
+
+.product-detail__description{
+    display: flex;
+    gap: 40px;
+  }
+  .product-detail__descriptionWrap{
+    width: 100%;
+  }
+  .product-detail__files-wrap{
+    padding: 0;
+    width: 400px;
+    flex-shrink: 0;
+  }
+  .product-detail__files{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product-detail__files a{
+    padding: 6px 12px;
+  
+    border-radius: 4px;
+  }
+  .product-detail__files .btn{
+    font-size: 14px;
+   min-height: 42px;
+      padding: 0 12px; 
+  }
+  
+  @media screen and (max-width: 991px){
+  .product-detail__description{
+    flex-direction: column;
+  }
+    .product-detail__files-wrap{
+    width: 100%;
+  }
+  }

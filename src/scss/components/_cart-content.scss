@@ -300,6 +300,7 @@
     background-image: url("../img/icons/check-white.svg");
     background-position: center center;
     background-repeat: no-repeat;
+    border: 1px solid $green-500;
 }
 
 .cart-table-shipping-item input:checked~.cart-table-shipping-text::after {
