@@ -853,9 +853,13 @@ section.categories {
 .home-page #ratingSection .rating-content .rating-content-text {
 
 }
+.home-page #ratingSection .stars .star{
+    height: 18px;
+      width: 18px;
+  }
 #ratingSection .stars{
     margin-bottom: 20px;
-  }
+}
 .home-page #ratingSection .rating-section-inner::before {
     content: "";
     height: 360px;
