@@ -808,7 +808,7 @@ section.categories {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    min-height: 300px;
+    min-height: 330px;
     justify-content: space-between;
 }
 
@@ -853,7 +853,9 @@ section.categories {
 .home-page #ratingSection .rating-content .rating-content-text {
 
 }
-
+#ratingSection .stars{
+    margin-bottom: 20px;
+  }
 .home-page #ratingSection .rating-section-inner::before {
     content: "";
     height: 360px;
