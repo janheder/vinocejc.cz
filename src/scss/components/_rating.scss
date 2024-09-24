@@ -161,7 +161,7 @@
 
 @media screen and (max-width:991px) {
     #ratingSection {
-        padding: 60px 0 40px
+        padding: 0px 0 0px
     }
 
     #ratingSection .vote-grid {
@@ -169,7 +169,7 @@
         overflow: auto;
         width: 100%;
         grid-gap: 20px;
-        padding-bottom: 20px
+        padding-bottom: 0px;
     }
 
     #ratingSection .vote-wrap {
@@ -179,7 +179,7 @@
 
 @media screen and (max-width:575px) {
     #ratingSection {
-        padding: 40px 0
+        padding: 0px 0;
     }
 
     #ratingSection .rating-content-title h3 {
