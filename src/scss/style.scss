@@ -326,7 +326,7 @@ section.products h2 {
 }
 
 .product-detail__files a {
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray-300;
     padding: 12px 15px;
     display: flex;
     align-items: center;
@@ -934,7 +934,7 @@ section.categories {
 .kontaktyTop__col {
     width: 100%;
     text-align: center;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray-300;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -956,7 +956,7 @@ section.categories {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray-300;
     border-radius: 50%;
     background: white;
     transform: translateY(-50%);
@@ -995,7 +995,7 @@ h3.kontaktyTop__title {
 
 .kontaktyContact {
     background: white;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray-300;
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -1282,7 +1282,7 @@ h3.kontaktyTop__title {
 
 .wine-item {
     padding: 30px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $gray-300;
 }
 
 .wine-item h2 {
@@ -1295,5 +1295,13 @@ h3.kontaktyTop__title {
     height: 36px;
     width: 36px;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    background-size: contain;
+}
+@media screen and (max-width: 991px) {
+    .wine-item-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
 }
