@@ -850,16 +850,17 @@ section.categories {
     margin: 0;
 }
 
-.home-page #ratingSection .rating-content .rating-content-text {
+.home-page #ratingSection .rating-content .rating-content-text {}
 
-}
-.home-page #ratingSection .stars .star{
+.home-page #ratingSection .stars .star {
     height: 18px;
-      width: 18px;
-  }
-#ratingSection .stars{
+    width: 18px;
+}
+
+#ratingSection .stars {
     margin-bottom: 20px;
 }
+
 .home-page #ratingSection .rating-section-inner::before {
     content: "";
     height: 360px;
@@ -1186,6 +1187,7 @@ h3.kontaktyTop__title {
     padding-left: 0;
     padding-right: 0;
 }
+
 @media screen and (max-width: 450px) {
     .points.--footer .points-content {
         padding: 15px 0;
@@ -1193,6 +1195,7 @@ h3.kontaktyTop__title {
         padding-right: 0;
     }
 }
+
 .cart-content.--narrow .cart-aside__table .cart-aside__row:first-child {
     display: none;
 }
@@ -1226,18 +1229,19 @@ h3.kontaktyTop__title {
     transform: rotate(-90deg) translate(50%, 50%);
 }
 
-.searchAutocomplete__title{
+.searchAutocomplete__title {
     color: #d31217;
-  }
-  .searchAutocomplete__link{
-    font-size: 15px;
-  }
-  
-  .breadcrumbs__item.--home{
-    display: inline-flex;
-  }
+}
 
-  .tag.--circleSale{
+.searchAutocomplete__link {
+    font-size: 15px;
+}
+
+.breadcrumbs__item.--home {
+    display: inline-flex;
+}
+
+.tag.--circleSale {
     height: 60px;
     width: 53px;
     background-color: transparent;
@@ -1247,16 +1251,19 @@ h3.kontaktyTop__title {
     top: 0;
     padding-bottom: 5px;
     margin: 0;
-  }
-  .product-card__tagsRight{
+}
+
+.product-card__tagsRight {
     top: -10px;
     right: 10px;
-  }
-  .product-detail__photos .product-card__tagsRight {
+}
+
+.product-detail__photos .product-card__tagsRight {
     top: 0;
-  }
-  .product-detail__photos .product-card__tagsRight .product-card__tagSingle .tag.--circleSale{
-      height: 74px;
+}
+
+.product-detail__photos .product-card__tagsRight .product-card__tagSingle .tag.--circleSale {
+    height: 74px;
     width: 69px;
     background-color: transparent;
     background-image: url(../img/icons/tag-sale.svg);
@@ -1265,4 +1272,28 @@ h3.kontaktyTop__title {
     top: 0;
     padding-bottom: 5px;
     font-size: 16px;
-  }
+}
+
+.wine-item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.wine-item {
+    padding: 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.wine-item h2 {
+    margin: 0;
+}
+
+.wine-item h2::before {
+    content: "";
+    background-image: url(../img/logo-symbol-red.svg);
+    height: 36px;
+    width: 36px;
+    display: flex;
+    margin-bottom: 15px;
+}
