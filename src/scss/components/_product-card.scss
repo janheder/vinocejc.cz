@@ -119,6 +119,7 @@
     text-align: left;
     font-size: 14px;
     padding-left: 6px;
+    text-transform: capitalize;
 }
 .product-card__deliveryText.--unavailable{
     color: $gray-500;
@@ -135,6 +136,7 @@
     text-decoration: line-through;
     margin: 0 5px;
     line-height: 1;
+    color: $gray-500;
 }
 .product-card__priceMain{
     color: $red-500;
