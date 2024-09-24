@@ -13,7 +13,7 @@
     padding: 80px 0 80px 0;
     border-top: 2px solid #f9f9f9;
     border-bottom: 0px solid #f9f9f9;
-  }
+}
 #ratingSection .rating-content {
     display: flex;
     align-items: center;
@@ -163,7 +163,9 @@
     #ratingSection {
         padding: 0px 0 0px
     }
-
+    #ratingSection .rating-section-inner{
+        padding: 60px 0 60px 0;
+    }
     #ratingSection .vote-grid {
         display: flex;
         overflow: auto;
@@ -181,7 +183,9 @@
     #ratingSection {
         padding: 0px 0;
     }
-
+    #ratingSection .rating-section-inner{
+        padding: 40px 0 40px 0;
+    }
     #ratingSection .rating-content-title h3 {
         font-size: 20px;
         line-height: 1.2
