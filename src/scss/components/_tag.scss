@@ -13,11 +13,13 @@
     border-radius: $border-radius-main;
 }
 .tag.--sale{
-    background: $white;
+    /*background: $white;*/
+    background-color: rgba($red-500,0.1);
     color: $red-500;
 }
 .tag.--new{
-    background: $white;
+    /*background: $white;*/
+    background-color: rgba($green-500,0.1);
     color: $green-500;
 }
 .tag.--recommended{

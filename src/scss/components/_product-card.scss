@@ -115,11 +115,10 @@
 .product-card__deliveryText{
     margin: 0;
     color: $green-500;
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
     font-size: 14px;
     padding-left: 6px;
-    text-transform: uppercase;
 }
 .product-card__deliveryText.--unavailable{
     color: $gray-500;
