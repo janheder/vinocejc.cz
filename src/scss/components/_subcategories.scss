@@ -1,6 +1,7 @@
 .subcategories{
     padding-top: 0;
     padding-bottom: 0px;
+    padding-top: 60px;
 }
 .subcategories__single{
     padding:10px 0;
@@ -40,21 +41,19 @@
 }
 @media screen and (max-width: 575px){
     .subcategories{
-        overflow-x: auto;
         padding: 0;
         padding-bottom: 0px;
+        padding-top: 30px;
     }
     .subcategories .row{
-        flex-wrap: nowrap;
-        -ms-overflow-style: none; 
-        scrollbar-width: none; 
-        overflow-x: scroll;
+        flex-wrap: wrap;
     }
-    .subcategories .row::-webkit-scrollbar { 
-        display: none;
+    .subcategories .row .col-8{
+        width: 100%;
     }
     .subcategories__single{
         padding: 0;
+        margin-bottom: 10px;
     }
     .subcategories__link{
         padding: 0 10px;
