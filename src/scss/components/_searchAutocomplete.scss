@@ -9,6 +9,7 @@
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
     opacity: 0;
     pointer-events: none;
+    border: 1px solid $gray-300;
 }
 .searchAutocomplete.--active{    
     opacity: 1;
@@ -16,6 +17,7 @@
 }
 .searchAutocomplete__section{
     padding: 10px 0;
+    border-top: 1px solid $gray-300;
 }
 .searchAutocomplete__title{
     font-size: 14px;
