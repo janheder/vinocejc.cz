@@ -1277,6 +1277,9 @@ h3.kontaktyTop__title {
 .wine-item {
     padding: 30px;
     border: 1px solid $gray-300;
+    align-items:flex-start;
+    display: flex;
+    flex-direction :column;
 }
 
 .wine-item h2 {
@@ -1292,6 +1295,12 @@ h3.kontaktyTop__title {
     margin-bottom: 20px;
     background-size: contain;
 }
+.wine-item span{
+    display: flex;
+  }
+  .wine-item .btn{
+    margin-top: 20px;
+  }
 @media screen and (max-width: 991px) {
     .wine-item-grid {
         grid-template-columns: repeat(1, 1fr);
