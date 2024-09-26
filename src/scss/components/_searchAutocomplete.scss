@@ -10,6 +10,7 @@
     opacity: 0;
     pointer-events: none;
     border: 1px solid $gray-300;
+    border-top: 0;
 }
 .searchAutocomplete.--active{    
     opacity: 1;
@@ -22,7 +23,7 @@
 .searchAutocomplete__title{
     font-size: 14px;
     font-weight: 500;
-    color: $gray-500;
+    color: $red-500;
     display: flex;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -31,7 +32,7 @@
 }
 .searchAutocomplete__link{
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: $gray-900;
     display: flex;
@@ -40,10 +41,13 @@
         background: $gray-100;
     }
 }
+.searchAutocomplete__item img{
+    width: 40px;
+}
 @media screen and (max-width: 991px){
     .searchAutocomplete {
         left: 0px;
         right: 0px;
         width: auto;
     }
-}
+
