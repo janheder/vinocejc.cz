@@ -36,13 +36,17 @@
     font-weight: 400;
     color: $gray-900;
     display: flex;
+    align-items: center;
 
     &:hover, &:active, &:focus{
         background: $gray-100;
     }
 }
 .searchAutocomplete__item img{
-    width: 40px;
+    width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 10px;
 }
 @media screen and (max-width: 991px){
     .searchAutocomplete {
