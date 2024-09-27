@@ -1303,13 +1303,13 @@ h3.kontaktyTop__title {
   }
   .wine-item .btn{
     margin-top: 20px;
+    height: 48px;
   }
 @media screen and (max-width: 991px) {
     .wine-item-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
-    
 }
 
 .product-detail__description{
