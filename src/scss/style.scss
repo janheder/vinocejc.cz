@@ -119,8 +119,28 @@ section h1 {
 }
 
 section h2 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+section h3 {
     font-size: 26px;
     padding-bottom: 30px;
+    margin: 0;
+}
+section h4 {
+    font-size: 22px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+section h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+section h6 {
+    font-size: 18px;
+    padding-bottom: 20px;
     margin: 0;
 }
 
@@ -135,8 +155,27 @@ section h2 {
     }
 
     section h2 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    section h3 {
         font-size: 22px;
         padding-bottom: 20px;
+    }
+    section h4 {
+        font-size: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    section h5 {
+        font-size: 18px;
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    section h6 {
+        font-size: 16px;
+        padding-bottom: 15px;
+        margin: 0;
     }
 }
 
