@@ -1392,3 +1392,23 @@ h3.kontaktyTop__title {
   .product-detail__descriptionWrap h3{
     font-size: 22px;
   }
+
+  .lightbox{
+    opacity: 1; 
+    visibility: visible;
+    transition: all 0s ease;
+  }
+  .fotogalerie-wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 60px 0 0 0;
+}
+.fotogalerie-wrap img{
+  aspect-ratio: 4/3;
+}
+@media screen and (max-width: 575px){
+  .fotogalerie-wrap{
+  grid-template-columns: 1fr 1fr;
+}
+}
