@@ -766,7 +766,11 @@ section.categories {
     margin: 0;
     display: inline;
 }
-
+.fotogalerie-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 .fotogalerie-wrap img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
@@ -1383,4 +1387,8 @@ h3.kontaktyTop__title {
     .product-detail__files-wrap{
     width: 100%;
   }
+  }
+
+  .product-detail__descriptionWrap h3{
+    font-size: 22px;
   }
