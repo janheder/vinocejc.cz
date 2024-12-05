@@ -1406,3 +1406,19 @@ h3.kontaktyTop__title {
   grid-template-columns: 1fr 1fr;
 }
 }
+
+
+
+
+
+
+.tag.--free-delivery{
+    color: white;
+    font-size: 12px;
+    margin-right: -4px;
+  }
+  .product-detail__photos .product-card__tagSingle .tag.--free-delivery{
+        background: #50ac58;
+      height: 60px;
+    margin: 0;
+  }
