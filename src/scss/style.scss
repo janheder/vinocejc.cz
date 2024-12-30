@@ -123,21 +123,25 @@ section h2 {
     padding-bottom: 30px;
     margin: 0;
 }
+
 section h3 {
     font-size: 26px;
     padding-bottom: 25px;
     margin: 0;
 }
+
 section h4 {
     font-size: 22px;
     padding-bottom: 20px;
     margin: 0;
 }
+
 section h5 {
     font-size: 20px;
     padding-bottom: 20px;
     margin: 0;
 }
+
 section h6 {
     font-size: 18px;
     padding-bottom: 20px;
@@ -158,18 +162,22 @@ section h6 {
         font-size: 24px;
         padding-bottom: 20px;
     }
+
     section h3 {
         font-size: 22px;
         padding-bottom: 20px;
     }
+
     section h4 {
         font-size: 20px;
         padding-bottom: 20px;
     }
+
     section h5 {
         font-size: 18px;
         padding-bottom: 15px;
     }
+
     section h6 {
         font-size: 16px;
         padding-bottom: 15px;
@@ -1309,9 +1317,9 @@ h3.kontaktyTop__title {
 .wine-item {
     padding: 30px;
     border: 1px solid $gray-300;
-    align-items:flex-start;
+    align-items: flex-start;
     display: flex;
-    flex-direction :column;
+    flex-direction: column;
 }
 
 .wine-item h2 {
@@ -1327,16 +1335,20 @@ h3.kontaktyTop__title {
     margin-bottom: 20px;
     background-size: contain;
 }
-.wine-item p{
+
+.wine-item p {
     height: 100%;
 }
-.wine-item span{
+
+.wine-item span {
     display: flex;
-  }
-  .wine-item .btn{
+}
+
+.wine-item .btn {
     margin-top: 20px;
     height: 48px;
-  }
+}
+
 @media screen and (max-width: 991px) {
     .wine-item-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -1344,81 +1356,111 @@ h3.kontaktyTop__title {
     }
 }
 
-.product-detail__description{
+.product-detail__description {
     display: flex;
     gap: 40px;
-  }
-  .product-detail__descriptionWrap{
+}
+
+.product-detail__descriptionWrap {
     width: 100%;
-  }
-  .product-detail__files-wrap{
+}
+
+.product-detail__files-wrap {
     padding: 0;
     width: 400px;
     flex-shrink: 0;
-  }
-  .product-detail__files{
+}
+
+.product-detail__files {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .product-detail__files a{
+}
+
+.product-detail__files a {
     padding: 6px 12px;
-  
+
     border-radius: 4px;
-  }
-  .product-detail__files .btn{
+}
+
+.product-detail__files .btn {
     font-size: 14px;
-   min-height: 42px;
-      padding: 0 12px; 
-  }
-  
-  @media screen and (max-width: 991px){
-  .product-detail__description{
-    flex-direction: column;
-  }
-    .product-detail__files-wrap{
-    width: 100%;
-  }
-  }
+    min-height: 42px;
+    padding: 0 12px;
+}
 
-  .product-detail__descriptionWrap h3{
+@media screen and (max-width: 991px) {
+    .product-detail__description {
+        flex-direction: column;
+    }
+
+    .product-detail__files-wrap {
+        width: 100%;
+    }
+}
+
+.product-detail__descriptionWrap h3 {
     font-size: 22px;
-  }
+}
 
-  .news-page #lightbox{
-    opacity: 1; 
+.news-page #lightbox {
+    opacity: 1;
     visibility: visible;
     transition: all 0s ease;
     bottom: auto;
-  }
-  .fotogalerie-wrap{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  margin: 60px 0 0 0;
 }
+
+.fotogalerie-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 60px 0 0 0;
+}
+
 .fotogalerie-wrap img {
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
-@media screen and (max-width: 575px){
-  .fotogalerie-wrap{
-  grid-template-columns: 1fr 1fr;
+
+@media screen and (max-width: 575px) {
+    .fotogalerie-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
 }
-}
 
 
 
 
 
 
-.tag.--free-delivery{
+.tag.--free-delivery {
     color: white;
     font-size: 12px;
     margin-right: -4px;
-  }
-  .product-detail__photos .product-card__tagSingle .tag.--free-delivery{
-        background: #50ac58;
-      height: 60px;
+}
+
+.product-detail__photos .product-card__tagSingle .tag.--free-delivery {
+    background: #50ac58;
+    height: 60px;
     margin: 0;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .news-single.--full .news-single__top {
+        width: 120px;
+        min-height: 80px;
+        flex-shrink: 0;
+    }
+
+    .blog-page-grid {
+        gap: 10px;
+    }
+
+    .blog-page-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-page #ratingSection .vote-grid {
+    width: 100%;
+}
