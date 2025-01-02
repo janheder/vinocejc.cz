@@ -1464,3 +1464,10 @@ h3.kontaktyTop__title {
 .home-page #ratingSection .vote-grid {
     width: 100%;
 }
+
+.cart-heading__item.--complete .cart-heading__icon img{
+    display: none;
+  }
+  .cart-heading__item.--active .cart-heading__icon img{
+    filter: invert(1) ;
+  }
